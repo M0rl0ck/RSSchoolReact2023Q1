@@ -1,0 +1,12 @@
+.header__links {
+  display: flex;
+  padding: 15px 30px;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-link .active {
+  color: #0000ff;
+  cursor: default;
+}
