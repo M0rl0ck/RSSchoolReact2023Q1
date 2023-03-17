@@ -1,8 +1,8 @@
 import React from 'react';
-import { render, screen, fireEvent, act } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import connector from '../../utils/connector/Connector';
 import Cards from './Cards';
-import { vi, vitest } from 'vitest';
+import { vi } from 'vitest';
 import ICard from 'infostructure/ICard';
 
 const data: ICard[] = [
