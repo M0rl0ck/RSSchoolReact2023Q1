@@ -1,20 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { getLocation, LocationProps } from '../../utils/getLocation/getLocation';
 import './header.css';
 
-interface HeaderProp {
-  title: string;
-}
+const TITLES: { [index: string]: string } = {
+  '/': 'Main page',
+  '/about': 'About us',
+};
 
-export default class Header extends React.Component<HeaderProp> {
-  constructor(props: HeaderProp) {
+class Header extends React.Component<LocationProps> {
+  constructor(props: LocationProps) {
     super(props);
   }
   render() {
     return (
       <header className="header">
         <div className="container">
-          <h1>{this.props.title}</h1>
+          <h1>{TITLES[this.props.location.pathname] || 'Not found page'}</h1>
           <ul className="header__links">
             <li className="header-link">
               <NavLink to={'/'}>Main</NavLink>
@@ -28,3 +30,5 @@ export default class Header extends React.Component<HeaderProp> {
     );
   }
 }
+
+export default getLocation(Header);

@@ -1,11 +1,9 @@
-import Header from '../../components/header/Header';
 import React from 'react';
 
 export default class AboutPage extends React.Component {
   render() {
     return (
       <>
-        <Header title="About us." />
         <div className="about-page">
           <div className="container">
             <h2>About us</h2>
