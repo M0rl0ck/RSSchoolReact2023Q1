@@ -1,16 +1,18 @@
 import React from 'react';
 import './searchBar.css';
 
+const SEARCH_STORAGE_KEY = 'searchValue';
+
 export default class SearchBar extends React.Component {
   state = { value: '' };
 
   componentDidMount(): void {
-    const value = localStorage.getItem('searchValue');
+    const value = localStorage.getItem(SEARCH_STORAGE_KEY);
     this.setState({ value: value ? value : '' });
   }
 
   componentWillUnmount(): void {
-    localStorage.setItem('searchValue', this.state.value);
+    localStorage.setItem(SEARCH_STORAGE_KEY, this.state.value);
   }
 
   render(): React.ReactNode {
