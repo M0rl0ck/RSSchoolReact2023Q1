@@ -6,6 +6,7 @@ import './header.css';
 const TITLES: { [index: string]: string } = {
   '/': 'Main page',
   '/about': 'About us',
+  '/forms': 'Form page',
 };
 
 class Header extends React.Component<LocationProps> {
@@ -20,6 +21,9 @@ class Header extends React.Component<LocationProps> {
           <ul className="header__links">
             <li className="header-link">
               <NavLink to={'/'}>Main</NavLink>
+            </li>
+            <li className="header-link">
+              <NavLink to={'/forms'}>Forms</NavLink>
             </li>
             <li className="header-link">
               <NavLink to={'/about'}>About Us</NavLink>
