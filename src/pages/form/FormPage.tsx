@@ -14,7 +14,7 @@ export default class FormPage extends React.Component {
         <div className="container">
           <h2>Form</h2>
           <Form callback={this.addCard} />
-          <FormCards card={this.state.cards} />
+          <FormCards cards={this.state.cards} />
         </div>
       </div>
     );

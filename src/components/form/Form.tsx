@@ -41,6 +41,7 @@ export default class Form extends React.Component<FormProps> {
         img: URL.createObjectURL(file),
       };
       this.props.callback(card);
+      this.formRef.current?.reset();
     }
   };
   render(): React.ReactNode {
@@ -61,11 +62,18 @@ export default class Form extends React.Component<FormProps> {
           <option value="bbb">bbb</option>
         </select>
 
-        <input type="checkbox" ref={this.inputCheckboxRef} />
+        <input type="checkbox" id="consent" ref={this.inputCheckboxRef} />
+        <label htmlFor="consent">I consent to my personal data</label>
 
-        <input type="radio" id="male" value="male" ref={this.inputRadioMaleRef} />
+        <input type="radio" id="male" name="gender" value="male" ref={this.inputRadioMaleRef} />
         <label htmlFor="male">male</label>
-        <input type="radio" id="female" value="female" ref={this.inputRadioFemaleRef} />
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+          ref={this.inputRadioFemaleRef}
+        />
         <label htmlFor="female">female</label>
 
         <label htmlFor="file">Choose file</label>
