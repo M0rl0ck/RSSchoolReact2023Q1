@@ -1,6 +1,7 @@
 import IFormCard from '../../infostructure/IFormCard';
 import React from 'react';
 import FormCard from '../../base/formCard/FormCard';
+import './formCards.css';
 
 export default class FormCards extends React.Component<{ cards: IFormCard[] }> {
   render(): React.ReactNode {

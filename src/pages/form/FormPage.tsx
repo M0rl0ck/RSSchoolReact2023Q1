@@ -2,6 +2,7 @@ import Form from '../../components/form/Form';
 import React from 'react';
 import FormCards from '../../components/formCards/FormCards';
 import IFormCard from 'infostructure/IFormCard';
+import './formPage.css';
 
 export default class FormPage extends React.Component {
   state: { cards: IFormCard[] } = { cards: [] };

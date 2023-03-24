@@ -1,5 +1,6 @@
 import IFormCard from '../../infostructure/IFormCard';
 import React from 'react';
+import './form.css';
 
 type FormProps = {
   callback: (card: IFormCard) => void;
@@ -46,40 +47,57 @@ export default class Form extends React.Component<FormProps> {
   };
   render(): React.ReactNode {
     return (
-      <form action="" ref={this.formRef} onSubmit={this.submitHandl}>
-        <label htmlFor="name">Write your name: </label>
-        <input type="text" id="name" placeholder="Write your name" ref={this.inputNameRef} />
+      <form className="form" action="" ref={this.formRef} onSubmit={this.submitHandl}>
+        <label>
+          Write your name:{' '}
+          <input type="text" id="name" placeholder="Write your name" ref={this.inputNameRef} />
+        </label>
 
-        <label htmlFor="date">Your birthday: </label>
-        <input type="date" id="date" ref={this.inputDateRef} />
+        <label>
+          Your birthday: <input type="date" id="date" ref={this.inputDateRef} />
+        </label>
 
-        <label htmlFor="country">Country</label>
-        <select name="" id="country" defaultValue="123" ref={this.selectCountryRef}>
-          <option value="123" disabled>
-            123
-          </option>
-          <option value="aaa">aaa</option>
-          <option value="bbb">bbb</option>
-        </select>
+        <label>
+          Country:{' '}
+          <select name="" id="country" defaultValue="123" ref={this.selectCountryRef}>
+            <option value="123" disabled>
+              Choose country
+            </option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Brazil">Brazil</option>
+          </select>
+        </label>
 
-        <input type="checkbox" id="consent" ref={this.inputCheckboxRef} />
-        <label htmlFor="consent">I consent to my personal data</label>
+        <label>
+          I consent to my personal data:{' '}
+          <input type="checkbox" id="consent" ref={this.inputCheckboxRef} />
+        </label>
 
-        <input type="radio" id="male" name="gender" value="male" ref={this.inputRadioMaleRef} />
-        <label htmlFor="male">male</label>
-        <input
-          type="radio"
-          id="female"
-          name="gender"
-          value="female"
-          ref={this.inputRadioFemaleRef}
-        />
-        <label htmlFor="female">female</label>
+        <div className="gender-choose">
+          <span>Gender: </span>
+          <label>
+            male{' '}
+            <input type="radio" id="male" name="gender" value="male" ref={this.inputRadioMaleRef} />
+          </label>
 
-        <label htmlFor="file">Choose file</label>
-        <input type="file" id="file" accept="image/*" ref={this.inputFileRef} />
+          <label>
+            female{' '}
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              ref={this.inputRadioFemaleRef}
+            />
+          </label>
+        </div>
 
-        <input type="submit" />
+        <label>
+          Choose file: <input type="file" id="file" accept="image/*" ref={this.inputFileRef} />
+        </label>
+
+        <input type="submit" className="submit-button" />
       </form>
     );
   }
