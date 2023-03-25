@@ -1,6 +1,7 @@
 import IFormCard from '../../infostructure/IFormCard';
 import React from 'react';
 import './form.css';
+import FormCreateMessage from '../../base/formCreateMessage/FormCreateMessage';
 
 type FormProps = {
   callback: (card: IFormCard) => void;
@@ -17,6 +18,7 @@ const emptyErrors = {
 
 type StateType = {
   errors: typeof emptyErrors;
+  createdCard: boolean;
 };
 
 export default class Form extends React.Component<FormProps> {
@@ -39,7 +41,7 @@ export default class Form extends React.Component<FormProps> {
     this.inputRadioMaleRef = React.createRef<HTMLInputElement>();
     this.inputRadioFemaleRef = React.createRef<HTMLInputElement>();
     this.inputFileRef = React.createRef<HTMLInputElement>();
-    this.state = { errors: { ...emptyErrors } };
+    this.state = { errors: { ...emptyErrors }, createdCard: false };
   }
 
   validationForm: () => boolean = () => {
@@ -91,6 +93,10 @@ export default class Form extends React.Component<FormProps> {
     return isError;
   };
 
+  closeMessage = () => {
+    this.setState({ createdCard: false });
+  };
+
   submitHandl = (e: React.FormEvent) => {
     e.preventDefault();
     this.setState({ errors: { ...emptyErrors } });
@@ -108,6 +114,10 @@ export default class Form extends React.Component<FormProps> {
         img: URL.createObjectURL(file),
       };
       this.props.callback(card);
+      this.setState({ createdCard: true });
+      setTimeout(() => {
+        this.closeMessage();
+      }, 4000);
       this.formRef.current?.reset();
     }
   };
@@ -170,6 +180,8 @@ export default class Form extends React.Component<FormProps> {
         </label>
 
         <input type="submit" className="submit-button" />
+
+        {this.state.createdCard && <FormCreateMessage callback={this.closeMessage} />}
       </form>
     );
   }
