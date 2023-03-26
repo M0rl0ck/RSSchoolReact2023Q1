@@ -123,7 +123,7 @@ export default class Form extends React.Component<FormProps> {
   };
   render(): React.ReactNode {
     return (
-      <form className="form" action="" ref={this.formRef} onSubmit={this.submitHandl}>
+      <form className="form" action="" name="myForm" ref={this.formRef} onSubmit={this.submitHandl}>
         <label>
           Write your name:{' '}
           <input type="text" id="name" placeholder="Write your name" ref={this.inputNameRef} />
