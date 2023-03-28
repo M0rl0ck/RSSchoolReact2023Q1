@@ -1,31 +1,29 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './searchBar.css';
 
 const SEARCH_STORAGE_KEY = 'searchValue';
 
-export default class SearchBar extends React.Component {
-  state = { value: '' };
+export default function SearchBar() {
+  const [searchValue, setSearchValue] = useState<string>('');
+  const searchValueRef = useRef<string>(localStorage.getItem(SEARCH_STORAGE_KEY) || '');
 
-  componentDidMount(): void {
-    const value = localStorage.getItem(SEARCH_STORAGE_KEY);
-    this.setState({ value: value ? value : '' });
-  }
+  useEffect(() => {
+    setSearchValue(searchValueRef.current);
+    return () => {
+      localStorage.setItem(SEARCH_STORAGE_KEY, searchValueRef.current);
+    };
+  }, []);
 
-  componentWillUnmount(): void {
-    localStorage.setItem(SEARCH_STORAGE_KEY, this.state.value);
-  }
-
-  render(): React.ReactNode {
-    return (
-      <div className="search-container">
-        <input
-          type="search"
-          value={this.state.value}
-          onChange={(e) => {
-            this.setState({ value: e.target.value });
-          }}
-        />
-      </div>
-    );
-  }
+  return (
+    <div className="search-container">
+      <input
+        type="search"
+        value={searchValue}
+        onChange={(e) => {
+          setSearchValue(e.target.value);
+          searchValueRef.current = e.target.value;
+        }}
+      />
+    </div>
+  );
 }
