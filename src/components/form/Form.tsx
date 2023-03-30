@@ -1,5 +1,6 @@
 import IFormCard from '../../infostructure/IFormCard';
-import React from 'react';
+import React, { useState } from 'react';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import './form.css';
 import FormCreateMessage from '../../base/formCreateMessage/FormCreateMessage';
 
@@ -7,182 +8,157 @@ type FormProps = {
   callback: (card: IFormCard) => void;
 };
 
-const emptyErrors = {
-  nameError: '',
-  dateError: '',
-  countryError: '',
-  consentError: '',
-  genderError: '',
-  logoError: '',
-};
+interface IInputs {
+  name: string;
+  date: string;
+  country: CityEnum;
+  consent: boolean;
+  gender: 'male' | 'female';
+  file: File[];
+}
 
-type StateType = {
-  errors: typeof emptyErrors;
-  createdCard: boolean;
-};
+enum CityEnum {
+  country = '123',
+  USA = 'USA',
+  Canada = 'Canada',
+  Brazil = 'Brazil',
+}
 
-export default class Form extends React.Component<FormProps> {
-  inputNameRef: React.RefObject<HTMLInputElement>;
-  inputDateRef: React.RefObject<HTMLInputElement>;
-  selectCountryRef: React.RefObject<HTMLSelectElement>;
-  inputCheckboxRef: React.RefObject<HTMLInputElement>;
-  inputRadioMaleRef: React.RefObject<HTMLInputElement>;
-  inputRadioFemaleRef: React.RefObject<HTMLInputElement>;
-  inputFileRef: React.RefObject<HTMLInputElement>;
-  formRef: React.RefObject<HTMLFormElement>;
-  state: StateType;
-  constructor(props: FormProps) {
-    super(props);
-    this.formRef = React.createRef<HTMLFormElement>();
-    this.inputNameRef = React.createRef<HTMLInputElement>();
-    this.inputDateRef = React.createRef<HTMLInputElement>();
-    this.selectCountryRef = React.createRef<HTMLSelectElement>();
-    this.inputCheckboxRef = React.createRef<HTMLInputElement>();
-    this.inputRadioMaleRef = React.createRef<HTMLInputElement>();
-    this.inputRadioFemaleRef = React.createRef<HTMLInputElement>();
-    this.inputFileRef = React.createRef<HTMLInputElement>();
-    this.state = { errors: { ...emptyErrors }, createdCard: false };
-  }
+export default function Form({ callback }: FormProps) {
+  const [createdCard, setCreatedCard] = useState<boolean>(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<IInputs>({ mode: 'onSubmit', reValidateMode: 'onSubmit' });
 
-  validationForm: () => boolean = () => {
-    let isError = false;
-    const errors = { ...emptyErrors };
+  const onSubmit: SubmitHandler<IInputs> = (data) => {
+    const { name, date, country, gender } = data;
+    const fileUrl = URL.createObjectURL(data.file[0]);
+    const card: IFormCard = { name, date, country, gender, img: fileUrl };
+    callback(card);
+    setCreatedCard(true);
+    setTimeout(() => {
+      closeMessage();
+    }, 4000);
 
-    if (
-      !this.inputNameRef.current?.value ||
-      this.inputNameRef.current?.value.split(' ').some((el) => el.length < 3)
-    ) {
-      isError = true;
-      errors.nameError = 'Name must be at least 3 characters';
-    } else if (
-      this.inputNameRef.current?.value.split(' ').some((el) => el[0] !== el[0].toUpperCase())
-    ) {
-      isError = true;
-      errors.nameError = 'First name or last name must start with a capital letter';
-    }
-
-    if (!this.inputDateRef.current?.value) {
-      isError = true;
-      errors.dateError = 'Set date';
-    } else if (Date.parse(this.inputDateRef.current?.value) > Date.now()) {
-      isError = true;
-      errors.dateError = 'Invalid date';
-    }
-
-    if (this.selectCountryRef.current?.value === '123') {
-      isError = true;
-      errors.countryError = 'Please choose country';
-    }
-
-    if (!this.inputCheckboxRef.current?.checked) {
-      isError = true;
-      errors.consentError = 'To continue, you must select';
-    }
-
-    if (!this.inputRadioMaleRef.current?.checked && !this.inputRadioFemaleRef.current?.checked) {
-      isError = true;
-      errors.genderError = 'To continue, you must select';
-    }
-
-    if (this.inputFileRef.current?.files?.length === 0) {
-      isError = true;
-      errors.logoError = 'Please select picture';
-    }
-
-    this.setState({ errors: errors });
-    return isError;
+    reset();
   };
 
-  closeMessage = () => {
-    this.setState({ createdCard: false });
+  const closeMessage = () => {
+    setCreatedCard(false);
   };
 
-  submitHandl = (e: React.FormEvent) => {
-    e.preventDefault();
-    this.setState({ errors: { ...emptyErrors } });
-    if (this.validationForm()) {
-      return;
-    }
-    const files = this.inputFileRef.current?.files;
-    if (files && files.length) {
-      const [file] = files;
-      const card: IFormCard = {
-        name: this.inputNameRef.current?.value || '',
-        date: this.inputDateRef.current?.value || '',
-        country: this.selectCountryRef.current?.value || '',
-        gender: this.inputRadioMaleRef.current?.checked ? 'male' : 'female',
-        img: URL.createObjectURL(file),
-      };
-      this.props.callback(card);
-      this.setState({ createdCard: true });
-      setTimeout(() => {
-        this.closeMessage();
-      }, 4000);
-      this.formRef.current?.reset();
-    }
-  };
-  render(): React.ReactNode {
-    return (
-      <form className="form" action="" name="myForm" ref={this.formRef} onSubmit={this.submitHandl}>
+  return (
+    <form className="form" name="myForm" onSubmit={handleSubmit(onSubmit)}>
+      <label>
+        Write your name:{' '}
+        <input
+          {...register('name', {
+            required: 'Name must be at least 3 characters',
+            minLength: {
+              value: 3,
+              message: 'Name must be at least 3 characters',
+            },
+            validate: (value) =>
+              value.split(' ').some((el) => el[0] !== el[0].toLowerCase()) ||
+              'First name or last name must start with a capital letter',
+          })}
+          id="name"
+          placeholder="Write your name"
+          type="text"
+        />
+        {errors.name && <span className="formError">{errors.name.message}</span>}
+      </label>
+
+      <label>
+        Your birthday:{' '}
+        <input
+          {...register('date', {
+            required: 'Please set date',
+            validate: (value) => Date.parse(value) < Date.now() || 'Invalid date',
+          })}
+          name="date"
+          type="date"
+          id="date"
+        />
+        {errors.date && <span className="formError">{errors.date.message}</span>}
+      </label>
+
+      <label>
+        Country:{' '}
+        <select
+          {...register('country', {
+            validate: (value) => value !== '123' || 'Please choose country',
+          })}
+          name="country"
+          id="country"
+          defaultValue="123"
+        >
+          <option value="123" disabled>
+            Choose country
+          </option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Brazil">Brazil</option>
+        </select>
+        {errors.country && <span className="formError">{errors.country.message}</span>}
+      </label>
+
+      <label>
+        I consent to my personal data:{' '}
+        <input
+          {...register('consent', {
+            required: 'To continue, you must select',
+          })}
+          type="checkbox"
+          name="consent"
+          id="consent"
+        />
+        {errors.consent && <span className="formError">{errors.consent.message}</span>}
+      </label>
+
+      <div className="gender-choose">
+        <span>Gender: </span>
         <label>
-          Write your name:{' '}
-          <input type="text" id="name" placeholder="Write your name" ref={this.inputNameRef} />
-          <span className="formError">{this.state.errors.nameError}</span>
+          male{' '}
+          <input
+            {...register('gender', { required: 'To continue, you must select' })}
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+          />
         </label>
 
         <label>
-          Your birthday: <input type="date" id="date" ref={this.inputDateRef} />
-          <span className="formError">{this.state.errors.dateError}</span>
+          female{' '}
+          <input
+            {...register('gender', { required: 'To continue, you must select' })}
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+          />
         </label>
+        {errors.gender && <span className="formError">{errors.gender.message}</span>}
+      </div>
 
-        <label>
-          Country:{' '}
-          <select name="" id="country" defaultValue="123" ref={this.selectCountryRef}>
-            <option value="123" disabled>
-              Choose country
-            </option>
-            <option value="USA">USA</option>
-            <option value="Canada">Canada</option>
-            <option value="Brazil">Brazil</option>
-          </select>
-          <span className="formError">{this.state.errors.countryError}</span>
-        </label>
+      <label>
+        Choose file:{' '}
+        <input
+          {...register('file', { required: 'Please select picture' })}
+          type="file"
+          name="file"
+          id="file"
+          accept="image/*"
+        />
+        {errors.file && <span className="formError">{errors.file.message}</span>}
+      </label>
 
-        <label>
-          I consent to my personal data:{' '}
-          <input type="checkbox" id="consent" ref={this.inputCheckboxRef} />
-          <span className="formError">{this.state.errors.consentError}</span>
-        </label>
-
-        <div className="gender-choose">
-          <span>Gender: </span>
-          <label>
-            male{' '}
-            <input type="radio" id="male" name="gender" value="male" ref={this.inputRadioMaleRef} />
-          </label>
-
-          <label>
-            female{' '}
-            <input
-              type="radio"
-              id="female"
-              name="gender"
-              value="female"
-              ref={this.inputRadioFemaleRef}
-            />
-          </label>
-          <span className="formError">{this.state.errors.genderError}</span>
-        </div>
-
-        <label>
-          Choose file: <input type="file" id="file" accept="image/*" ref={this.inputFileRef} />
-          <span className="formError">{this.state.errors.logoError}</span>
-        </label>
-
-        <input type="submit" className="submit-button" />
-
-        {this.state.createdCard && <FormCreateMessage callback={this.closeMessage} />}
-      </form>
-    );
-  }
+      <input type="submit" className="submit-button" />
+      {createdCard && <FormCreateMessage callback={closeMessage} />}
+    </form>
+  );
 }
