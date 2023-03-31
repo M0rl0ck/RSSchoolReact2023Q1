@@ -7,3 +7,10 @@
 .form-page .container h2 {
   align-self: center;
 }
+
+.form-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

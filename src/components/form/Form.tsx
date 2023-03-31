@@ -35,8 +35,9 @@ export default function Form({ callback }: FormProps) {
 
   const onSubmit: SubmitHandler<IInputs> = (data) => {
     const { name, date, country, gender } = data;
+    const id = Date.now();
     const fileUrl = URL.createObjectURL(data.file[0]);
-    const card: IFormCard = { name, date, country, gender, img: fileUrl };
+    const card: IFormCard = { name, id, date, country, gender, img: fileUrl };
     callback(card);
     setCreatedCard(true);
     setTimeout(() => {
