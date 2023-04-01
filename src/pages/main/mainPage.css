@@ -1,0 +1,9 @@
+.main-page .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-page .container h2 {
+  align-self: center;
+}
