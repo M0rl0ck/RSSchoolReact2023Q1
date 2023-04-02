@@ -4,7 +4,7 @@ import FormCreateMessage from './FormCreateMessage';
 
 describe('create message', () => {
   it('render message', () => {
-    render(<FormCreateMessage callback={() => {}} />);
+    render(<FormCreateMessage isOpen={true} callback={() => {}} />);
     expect(screen.getByText('The card has been created')).toBeInTheDocument();
     expect(screen.getByText('The card has been created')).toHaveClass('form-message');
   });

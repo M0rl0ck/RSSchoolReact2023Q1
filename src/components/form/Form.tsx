@@ -159,7 +159,7 @@ export default function Form({ callback }: FormProps) {
       </label>
 
       <input type="submit" className="submit-button" />
-      {createdCard && <FormCreateMessage callback={closeMessage} />}
+      <FormCreateMessage isOpen={createdCard} callback={closeMessage} />
     </form>
   );
 }

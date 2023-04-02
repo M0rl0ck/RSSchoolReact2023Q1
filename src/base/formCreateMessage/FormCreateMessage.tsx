@@ -1,11 +1,16 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 type FormMessageProps = {
+  isOpen: boolean;
   callback: () => void;
 };
 
-export default function FormCreateMessage({ callback }: FormMessageProps) {
-  return (
+export default function FormCreateMessage({ isOpen, callback }: FormMessageProps) {
+  if (!isOpen) {
+    return null;
+  }
+  return ReactDOM.createPortal(
     <div className="form-message-wrapper" onClick={callback}>
       <div
         className="form-message-container"
@@ -18,6 +23,7 @@ export default function FormCreateMessage({ callback }: FormMessageProps) {
         </span>
         <h2 className="form-message">The card has been created</h2>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
