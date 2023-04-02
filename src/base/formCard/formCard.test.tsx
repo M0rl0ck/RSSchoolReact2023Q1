@@ -5,6 +5,7 @@ import IFormCard from 'infostructure/IFormCard';
 
 describe('FormCard', () => {
   const card: IFormCard = {
+    id: 32,
     name: 'Boris',
     date: '1999.10.10',
     country: 'Russia',
