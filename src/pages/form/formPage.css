@@ -1,0 +1,9 @@
+.form-page .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-page .container h2 {
+  align-self: center;
+}

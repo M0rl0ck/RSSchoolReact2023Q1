@@ -1,0 +1,19 @@
+.form__card-container {
+  width: 600px;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.form__logo-container img {
+  width: 250px;
+  display: block;
+}
+
+.form__card-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
