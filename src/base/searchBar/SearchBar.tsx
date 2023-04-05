@@ -7,6 +7,11 @@ export default function SearchBar() {
   const [searchValue, setSearchValue] = useState<string>('');
   const searchValueRef = useRef<string>(localStorage.getItem(SEARCH_STORAGE_KEY) || '');
 
+  const setValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(e.target.value);
+    searchValueRef.current = e.target.value;
+  };
+
   useEffect(() => {
     setSearchValue(searchValueRef.current);
     return () => {
@@ -16,14 +21,7 @@ export default function SearchBar() {
 
   return (
     <div className="search-container">
-      <input
-        type="search"
-        value={searchValue}
-        onChange={(e) => {
-          setSearchValue(e.target.value);
-          searchValueRef.current = e.target.value;
-        }}
-      />
+      <input type="search" value={searchValue} onChange={setValue} />
     </div>
   );
 }

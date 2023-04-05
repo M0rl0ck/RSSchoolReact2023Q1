@@ -6,16 +6,17 @@ import MainPage from '../../pages/main/MainPage';
 import Page404 from '../../pages/page404/Page404';
 import './app.css';
 import FormPage from '../../pages/form/FormPage';
+import { PATH } from '../../infostructure/constants';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path={PATH.MAIN} element={<Layout />}>
           <Route index element={<MainPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/forms" element={<FormPage />} />
-          <Route path="/*" element={<Page404 />} />
+          <Route path={PATH.ABOUT} element={<AboutPage />} />
+          <Route path={PATH.FORMS} element={<FormPage />} />
+          <Route path={PATH.DEFAULT} element={<Page404 />} />
         </Route>
       </Routes>
     </div>

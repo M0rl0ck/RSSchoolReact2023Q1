@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { PATH } from '../../infostructure/constants';
 import './header.css';
 
 const TITLES: { [index: string]: string } = {
-  '/': 'Main page',
-  '/about': 'About us',
-  '/forms': 'Form page',
+  [PATH.MAIN]: 'Main page',
+  [PATH.ABOUT]: 'About us',
+  [PATH.FORMS]: 'Form page',
 };
 
 export default function Header() {
