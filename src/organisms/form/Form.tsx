@@ -2,7 +2,7 @@ import IFormCard from '../../infostructure/IFormCard';
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './form.css';
-import FormCreateMessage from '../../base/formCreateMessage/FormCreateMessage';
+import FormCreateMessage from '../../molecules/formCreateMessage/FormCreateMessage';
 
 type FormProps = {
   callback: (card: IFormCard) => void;

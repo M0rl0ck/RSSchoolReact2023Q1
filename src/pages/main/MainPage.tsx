@@ -1,10 +1,10 @@
-import SearchBar from '../../base/searchBar/SearchBar';
+import SearchBar from '../../atoms/searchBar/SearchBar';
 import React, { useEffect, useState } from 'react';
-import Card from '../../base/card/Card';
+import Card from '../../molecules/card/Card';
 import './mainPage.css';
 import connector from '../../utils/connector/Connector';
 import ICard from '../../infostructure/ICard';
-import CardsList from '../../components/cardsList/CardsList';
+import CardsList from '../../organisms/cardsList/CardsList';
 
 export default function MainPage() {
   const [cards, setCards] = useState<ICard[]>([]);

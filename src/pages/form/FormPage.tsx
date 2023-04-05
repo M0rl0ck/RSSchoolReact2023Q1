@@ -1,9 +1,9 @@
-import Form from '../../components/form/Form';
+import Form from '../../organisms/form/Form';
 import React, { useState } from 'react';
 import IFormCard from 'infostructure/IFormCard';
 import './formPage.css';
-import CardsList from '../../components/cardsList/CardsList';
-import FormCard from '../../base/formCard/FormCard';
+import CardsList from '../../organisms/cardsList/CardsList';
+import FormCard from '../../molecules/formCard/FormCard';
 
 export default function FormPage() {
   const [cards, setCards] = useState<IFormCard[]>([]);
