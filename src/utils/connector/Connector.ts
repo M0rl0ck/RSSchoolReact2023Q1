@@ -1,19 +1,19 @@
-import ICard from '../../infostructure/ICard';
+import ICharacterCard from '../../infostructure/ICharacterCard';
+
+const BaseUrl = 'https://rickandmortyapi.com/api';
 
 class Connector {
-  private dataCards: ICard[] = [];
+  private dataCards: ICharacterCard[] = [];
   private url: string;
   constructor(url: string) {
     this.url = url;
   }
 
-  async getProducts(): Promise<ICard[]> {
-    if (this.dataCards.length) {
-      return this.dataCards;
-    }
-
+  async getProducts(): Promise<ICharacterCard[]> {
+    const url = new URL(BaseUrl + '/character');
+    // url.searchParams.set('find', 'rick');
     try {
-      const responce = await fetch(`${this.url}`);
+      const responce = await fetch(url);
 
       if (!responce.ok) {
         throw new Error(
@@ -21,21 +21,15 @@ class Connector {
         );
       }
       const data = await responce.json();
-      this.dataCards = data;
+      this.dataCards = data.results;
     } catch (e) {
       console.log(e);
     }
     return this.dataCards;
   }
 
-  async getProduct(id: number): Promise<ICard> {
-    let result: ICard | undefined;
-    if (this.dataCards.length) {
-      result = this.dataCards.find((el) => el.id === id);
-      if (result) {
-        return result;
-      }
-    }
+  async getProduct(id: number): Promise<ICharacterCard> {
+    let result: ICharacterCard | undefined;
     const endUrl = `/${id.toString()}`;
 
     try {
@@ -45,7 +39,7 @@ class Connector {
           `Sorry, but servet return status ${responce.status} error: ${responce.statusText}`
         );
       }
-      const data: ICard = await responce.json();
+      const data: ICharacterCard = await responce.json();
       result = data;
     } catch (e) {
       console.log(e);
@@ -58,8 +52,6 @@ class Connector {
   }
 }
 
-const url = 'https://fakestoreapi.com/products';
-
-const connector = new Connector(url);
+const connector = new Connector(BaseUrl);
 
 export default connector;
