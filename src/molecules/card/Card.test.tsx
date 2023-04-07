@@ -11,14 +11,6 @@ describe('Card', () => {
     type: '-',
     image: 'https://path-to-img',
   };
-  const card2 = {
-    id: 11,
-    name: 'My new best card',
-    status: 'Alive',
-    species: 'alien',
-    type: '--',
-    image: 'https://path-to-img',
-  };
   it('Render card', () => {
     render(<Card card={card1} />);
     expect(screen.getByText('My best card')).toBeInTheDocument();
