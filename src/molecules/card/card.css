@@ -8,6 +8,16 @@
   align-items: center;
   gap: 10px;
   box-shadow: 0 0 1px 2px #b7b7b7, 0 0 2px 4px #d1d1d1;
+  transition: all 0.2s;
+}
+
+.cards-container > .card-container:hover {
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+
+.cards-container > .card-container {
+  cursor: pointer;
 }
 
 .card-container img {

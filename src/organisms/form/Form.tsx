@@ -2,7 +2,7 @@ import IFormCard from '../../infostructure/IFormCard';
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './form.css';
-import FormCreateMessage from '../../molecules/formCreateMessage/FormCreateMessage';
+import Modal from '../../molecules/Modal/Modal';
 
 type FormProps = {
   callback: (card: IFormCard) => void;
@@ -159,7 +159,11 @@ export default function Form({ callback }: FormProps) {
       </label>
 
       <input type="submit" className="submit-button" />
-      <FormCreateMessage isOpen={createdCard} callback={closeMessage} />
+      {createdCard && (
+        <Modal callback={closeMessage}>
+          <h2 className="form-message">The card has been created</h2>
+        </Modal>
+      )}
     </form>
   );
 }
