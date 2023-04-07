@@ -21,7 +21,7 @@ export default function MainPage() {
     <>
       <div className="main-page">
         <div className="container">
-          <h2>Main page</h2>
+          <h2 className="page-header">Main page</h2>
           <SearchBar />
           <CardsList cards={cards} class_name={'cards-container'} Component={Card} />
         </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './cardModal.css';
+import './modal.css';
 
-type CardModalProps = {
-  id: number;
+type ModalProps = {
+  children: React.ReactNode;
   callback: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 };
 
-export default function CardModal({ id, callback }: CardModalProps) {
+export default function CardModal({ children, callback }: ModalProps) {
   return ReactDOM.createPortal(
     <div className="card-modal-wrapper" onClick={callback}>
       <div
@@ -19,7 +19,7 @@ export default function CardModal({ id, callback }: CardModalProps) {
         <span className="close-button" onClick={callback}>
           X
         </span>
-        <h2 className="">Id: {id}</h2>
+        {children}
       </div>
     </div>,
     document.body

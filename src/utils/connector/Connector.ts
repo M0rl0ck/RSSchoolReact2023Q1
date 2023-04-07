@@ -1,3 +1,4 @@
+import ICharacterModalCard from '../../infostructure/ICharacterModalCard';
 import ICharacterCard from '../../infostructure/ICharacterCard';
 
 const BaseUrl = 'https://rickandmortyapi.com/api';
@@ -10,7 +11,7 @@ class Connector {
   }
 
   async getProducts(): Promise<ICharacterCard[]> {
-    const url = new URL(BaseUrl + '/character');
+    const url = new URL(this.url + '/character');
     // url.searchParams.set('find', 'rick');
     try {
       const responce = await fetch(url);
@@ -28,18 +29,18 @@ class Connector {
     return this.dataCards;
   }
 
-  async getProduct(id: number): Promise<ICharacterCard> {
-    let result: ICharacterCard | undefined;
-    const endUrl = `/${id.toString()}`;
+  async getProduct(id: number): Promise<ICharacterModalCard> {
+    let result: ICharacterModalCard | undefined;
+    const url = new URL(`${this.url}/character/${id.toString()}`);
 
     try {
-      const responce = await fetch(`${this.url}${endUrl}`);
+      const responce = await fetch(url);
       if (!responce.ok) {
         throw new Error(
           `Sorry, but servet return status ${responce.status} error: ${responce.statusText}`
         );
       }
-      const data: ICharacterCard = await responce.json();
+      const data: ICharacterModalCard = await responce.json();
       result = data;
     } catch (e) {
       console.log(e);
