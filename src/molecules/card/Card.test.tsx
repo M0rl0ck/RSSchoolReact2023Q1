@@ -5,41 +5,26 @@ import Card from './Card';
 describe('Card', () => {
   const card1 = {
     id: 10,
-    title: 'My best card',
-    price: 100,
-    description: 'This is the best card!',
-    category: 'test card',
+    name: 'My best card',
+    status: 'Alive',
+    species: 'human',
+    type: '-',
     image: 'https://path-to-img',
-    discountPercentage: 20,
-    rating: {
-      rate: 4.4,
-      count: 120,
-    },
   };
   const card2 = {
-    id: 10,
-    title: 'My best card',
-    price: 100,
-    description: 'This is the best card!',
-    category: 'test card',
+    id: 11,
+    name: 'My new best card',
+    status: 'Alive',
+    species: 'alien',
+    type: '--',
     image: 'https://path-to-img',
-    discountPercentage: 20,
-    rating: {
-      rate: 3.4,
-      count: 100,
-    },
   };
   it('Render card', () => {
     render(<Card card={card1} />);
     expect(screen.getByText('My best card')).toBeInTheDocument();
-    expect(screen.getByText('My best card')).toHaveClass('card-title');
-    expect(screen.getByText(/test card/i)).toBeInTheDocument();
-    expect(screen.getByText(/test card/i)).toHaveClass('card-category');
-    expect(screen.getByText(/Rate:/i)).toHaveClass('card-rate_red');
+    expect(screen.getByText('My best card')).toHaveClass('card-name-character');
+    expect(screen.getByText(/Alive/i)).toBeInTheDocument();
+    expect(screen.getByText(/Alive/i)).toHaveClass('card-character');
     expect(screen.getByRole('img')).toHaveAttribute('src', 'https://path-to-img');
-  });
-  it('class should change from rating', () => {
-    render(<Card card={card2} />);
-    expect(screen.getByText(/Rate:/i)).toHaveClass('card-rate_green');
   });
 });
