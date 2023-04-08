@@ -10,19 +10,27 @@ class Connector {
     this.url = url;
   }
 
-  async getProducts(): Promise<ICharacterCard[]> {
+  async getProducts(search = ''): Promise<ICharacterCard[]> {
     const url = new URL(this.url + '/character');
-    // url.searchParams.set('find', 'rick');
+    if (search) {
+      url.searchParams.set('name', search);
+    }
+
     try {
       const responce = await fetch(url);
 
-      if (!responce.ok) {
+      if (!responce.ok && responce.status != 404) {
         throw new Error(
           `Sorry, but servet return status ${responce.status} error: ${responce.statusText}`
         );
       }
-      const data = await responce.json();
-      this.dataCards = data.results;
+      if (responce.ok) {
+        const data = await responce.json();
+        this.dataCards = data.results;
+      }
+      if (responce.status === 404) {
+        this.dataCards = [];
+      }
     } catch (e) {
       console.log(e);
     }

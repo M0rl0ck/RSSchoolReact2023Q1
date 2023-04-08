@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './form.css';
 import Modal from '../../molecules/Modal/Modal';
+import { SubmitButton } from '../../atoms/button/Button';
 
 type FormProps = {
   callback: (card: IFormCard) => void;
@@ -158,7 +159,7 @@ export default function Form({ callback }: FormProps) {
         {errors.file && <span className="formError">{errors.file.message}</span>}
       </label>
 
-      <input type="submit" className="submit-button" />
+      <SubmitButton className="submit-button" text="submit" />
       {createdCard && (
         <Modal callback={closeMessage}>
           <h2 className="form-message">The card has been created</h2>
