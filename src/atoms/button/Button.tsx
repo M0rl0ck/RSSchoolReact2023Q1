@@ -7,5 +7,5 @@ interface ISubmitButton {
 }
 
 export function SubmitButton({ text, className }: ISubmitButton) {
-  return <button className={className}>{text}</button>;
+  return <input type="submit" className={className} value={text} />;
 }

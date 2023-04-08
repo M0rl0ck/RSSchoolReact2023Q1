@@ -159,7 +159,7 @@ export default function Form({ callback }: FormProps) {
         {errors.file && <span className="formError">{errors.file.message}</span>}
       </label>
 
-      <SubmitButton className="submit-button" text="submit" />
+      <SubmitButton className="submit-button" text="Submit" />
       {createdCard && (
         <Modal callback={closeMessage}>
           <h2 className="form-message">The card has been created</h2>
