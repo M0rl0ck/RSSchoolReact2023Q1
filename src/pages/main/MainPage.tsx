@@ -5,13 +5,18 @@ import './mainPage.css';
 import connector from '../../utils/connector/Connector';
 import ICharacterCard from '../../infostructure/ICharacterCard';
 import CardsList from '../../organisms/cardsList/CardsList';
+import Spinner from '../../atoms/spinner/spinner';
 
 export default function MainPage() {
   const [cards, setCards] = useState<ICharacterCard[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   async function getCards(search: string) {
+    setCards([]);
+    setIsLoading(true);
     const cards = await connector.getProducts(search);
     setCards(cards);
+    setIsLoading(false);
   }
 
   const memoizedCallback = useCallback((search: string) => {
@@ -23,6 +28,7 @@ export default function MainPage() {
         <div className="container">
           <h2 className="page-header">Main page</h2>
           <SearchBar callback={memoizedCallback} />
+          {isLoading && <Spinner />}
           <CardsList cards={cards} class_name={'cards-container'} Component={Card} />
         </div>
       </div>

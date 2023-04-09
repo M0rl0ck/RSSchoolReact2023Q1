@@ -1,0 +1,29 @@
+.spinner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 10%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 10px #6464ea dashed;
+  animation: spinner-run 4s infinite linear;
+}
+
+@keyframes spinner-run {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
