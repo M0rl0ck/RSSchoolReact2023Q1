@@ -1,11 +1,13 @@
-.search-container {
+.search-form {
   width: 100%;
   padding: 5px;
   display: flex;
+  gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
-.search-container input {
+.search-bar {
   width: 60%;
   border-radius: 20px;
   padding: 0 10px;

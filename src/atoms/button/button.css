@@ -1,0 +1,15 @@
+.submit-button,
+.search-button {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 160px;
+  height: 20px;
+}
+
+.search-button {
+  width: 120px;
+  height: 30px;
+}
