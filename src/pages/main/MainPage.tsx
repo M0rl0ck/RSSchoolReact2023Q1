@@ -5,7 +5,8 @@ import './mainPage.css';
 import connector from '../../utils/connector/Connector';
 import ICharacterCard from '../../infostructure/ICharacterCard';
 import CardsList from '../../organisms/cardsList/CardsList';
-import Spinner from '../../atoms/spinner/spinner';
+import Spinner from '../../atoms/spinner/Spinner';
+import NotFind from '../../atoms/notFind/NotFind';
 
 export default function MainPage() {
   const [cards, setCards] = useState<ICharacterCard[]>([]);
@@ -29,6 +30,7 @@ export default function MainPage() {
           <h2 className="page-header">Main page</h2>
           <SearchBar callback={memoizedCallback} />
           {isLoading && <Spinner />}
+          {!cards.length && !isLoading && <NotFind />}
           <CardsList cards={cards} class_name={'cards-container'} Component={Card} />
         </div>
       </div>
