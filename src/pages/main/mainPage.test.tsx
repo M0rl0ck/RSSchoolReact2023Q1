@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import connector from '../../utils/connector/Connector';
-import userEvent from '@testing-library/user-event';
 import { vi } from 'vitest';
 import MainPage from './MainPage';
 import ICharacterCard from '../../infostructure/ICharacterCard';
