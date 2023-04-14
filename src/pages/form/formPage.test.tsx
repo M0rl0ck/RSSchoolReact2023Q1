@@ -1,10 +1,11 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { renderWithProviders } from '../../store/utils/test-utils';
 import FormPage from './FormPage';
 
 describe('FormPage', () => {
   it('render formPge', () => {
-    render(<FormPage />);
+    renderWithProviders(<FormPage />);
     expect(screen.getByRole('heading', { level: 2 })).toBeInTheDocument();
   });
 });
