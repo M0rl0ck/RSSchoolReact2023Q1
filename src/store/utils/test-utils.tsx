@@ -6,7 +6,7 @@ import type { PreloadedState } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import type { AppStore, RootState } from '../store';
 import formReducer from '../redusers/formSlice';
-import mainReducer from '../redusers/mainCardSlice';
+import mainReducer from '../redusers/mainSearchSlice';
 
 interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
   preloadedState?: PreloadedState<RootState>;

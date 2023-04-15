@@ -1,12 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
 import formReducer from './redusers/formSlice';
-import mainReducer from './redusers/mainCardSlice';
+import mainSearchReducer from './redusers/mainSearchSlice';
+import { mainCardsApi } from './API/mainCardsApi';
 
 const store = configureStore({
   reducer: {
+    [mainCardsApi.reducerPath]: mainCardsApi.reducer,
     form: formReducer,
-    mainCards: mainReducer,
+    mainSearchValue: mainSearchReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(mainCardsApi.middleware),
 });
 
 type RootState = ReturnType<typeof store.getState>;

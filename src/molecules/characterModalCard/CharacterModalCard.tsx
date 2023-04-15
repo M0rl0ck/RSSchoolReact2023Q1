@@ -1,19 +1,30 @@
 import React from 'react';
-import ICharacterModalCard from '../../infostructure/ICharacterModalCard';
 import BasicCard from '../../molecules/basicCard/BasicCard';
+import { mainCardsApi } from '../../store/API/mainCardsApi';
+import Spinner from '../../atoms/spinner/Spinner';
 
 interface CharacterModalCardProp {
-  card: ICharacterModalCard | null;
+  id: number;
 }
 
-export default function CharacterModalCard({ card }: CharacterModalCardProp) {
-  if (!card) return null;
+export default function CharacterModalCard({ id }: CharacterModalCardProp) {
+  const { isError, data, isFetching } = mainCardsApi.useGetCardQuery(id);
+  if (!data) return null;
   return (
-    <div className="card-container">
-      <BasicCard card={card} />
-      <p className="card-character">Type: {card.type || '--'}</p>
-      <p className="card-character">Origin: {card.origin.name || '--'}</p>
-      <p className="card-character">Gender: {card.gender}</p>
-    </div>
+    <>
+      {isFetching && (
+        <div className="card-container">
+          <Spinner />
+        </div>
+      )}
+      {!isError && data && (
+        <div className="card-container">
+          <BasicCard card={data} />
+          <p className="card-character">Type: {data.type || '--'}</p>
+          <p className="card-character">Origin: {data.origin.name || '--'}</p>
+          <p className="card-character">Gender: {data.gender}</p>
+        </div>
+      )}
+    </>
   );
 }
