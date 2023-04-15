@@ -6,6 +6,7 @@ import type { PreloadedState } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import type { AppStore, RootState } from '../store';
 import formReducer from '../redusers/formSlice';
+import mainReducer from '../redusers/mainCardSlice';
 
 interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
   preloadedState?: PreloadedState<RootState>;
@@ -15,9 +16,14 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
 export function renderWithProviders(
   ui: React.ReactElement,
   {
-    preloadedState = { form: { cards: [] } },
-    // Automatically create a store instance if no store was passed in
-    store = configureStore({ reducer: { form: formReducer }, preloadedState }),
+    preloadedState = {
+      form: { cards: [] },
+      mainCards: { searchValue: '', isLoading: false, cards: [] },
+    },
+    store = configureStore({
+      reducer: { form: formReducer, mainCards: mainReducer },
+      preloadedState,
+    }),
     ...renderOptions
   }: ExtendedRenderOptions = {}
 ) {
@@ -25,6 +31,5 @@ export function renderWithProviders(
     return <Provider store={store}>{children}</Provider>;
   }
 
-  // Return an object with the store and all of RTL's query functions
   return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };
 }
