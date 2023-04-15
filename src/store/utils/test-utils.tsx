@@ -6,7 +6,8 @@ import type { PreloadedState } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import type { AppStore, RootState } from '../store';
 import formReducer from '../redusers/formSlice';
-import mainReducer from '../redusers/mainSearchSlice';
+import mainSearchReducer from '../redusers/mainSearchSlice';
+import { mainCardsApi } from '../../store/API/mainCardsApi';
 
 interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
   preloadedState?: PreloadedState<RootState>;
@@ -16,12 +17,14 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
 export function renderWithProviders(
   ui: React.ReactElement,
   {
-    preloadedState = {
-      form: { cards: [] },
-      mainCards: { searchValue: '', isLoading: false, cards: [] },
-    },
+    preloadedState = undefined,
     store = configureStore({
-      reducer: { form: formReducer, mainCards: mainReducer },
+      reducer: {
+        [mainCardsApi.reducerPath]: mainCardsApi.reducer,
+        form: formReducer,
+        mainSearchValue: mainSearchReducer,
+      },
+      middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(mainCardsApi.middleware),
       preloadedState,
     }),
     ...renderOptions

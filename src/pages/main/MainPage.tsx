@@ -19,7 +19,7 @@ export default function MainPage() {
           <SearchBar />
           {isFetching && <Spinner />}
           {isError && <NotFind />}
-          {!isError && data && (
+          {!isFetching && !isError && data && (
             <CardsList cards={data.results} class_name={'cards-container'} Component={Card} />
           )}
         </div>
