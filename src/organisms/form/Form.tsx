@@ -2,7 +2,7 @@ import IFormCard from '../../infostructure/IFormCard';
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './form.css';
-import Modal from '../../molecules/Modal/Modal';
+import Modal from '../../templates/Modal/Modal';
 import { SubmitButton } from '../../atoms/button/Button';
 import { formSlice } from '../../store/redusers/formSlice';
 import { useAppDispatch } from '../../store/hooks/hooks';

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ICharacterCard from '../../infostructure/ICharacterCard';
 import './card.css';
-import Modal from '../../molecules/Modal/Modal';
+import Modal from '../../templates/Modal/Modal';
 import BasicCard from '../../molecules/basicCard/BasicCard';
-import CharacterModalCard from '../../molecules/characterModalCard/CharacterModalCard';
+import CharacterModalCard from '../../organisms/characterModalCard/CharacterModalCard';
 
 interface ICardProp {
   card: ICharacterCard;

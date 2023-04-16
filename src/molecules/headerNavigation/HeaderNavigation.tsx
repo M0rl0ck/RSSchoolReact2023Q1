@@ -1,18 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { PATH } from '../../infostructure/constants';
 import './headerNavigation.css';
 
 export default function HeaderNavigation() {
   return (
     <ul className="header__links">
       <li className="header-link">
-        <NavLink to={'/'}>Main</NavLink>
+        <NavLink to={PATH.MAIN}>Main</NavLink>
       </li>
       <li className="header-link">
-        <NavLink to={'/forms'}>Forms</NavLink>
+        <NavLink to={PATH.FORMS}>Forms</NavLink>
       </li>
       <li className="header-link">
-        <NavLink to={'/about'}>About Us</NavLink>
+        <NavLink to={PATH.ABOUT}>About Us</NavLink>
       </li>
     </ul>
   );

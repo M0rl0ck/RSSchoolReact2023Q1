@@ -8,9 +8,7 @@ interface CharacterModalCardProp {
 }
 
 export default function CharacterModalCard({ id }: CharacterModalCardProp) {
-  const { isError, data, isFetching } = mainCardsApi.useGetCardQuery(id);
-  console.log(id);
-  if (!data) return null;
+  const { isError, isFetching, data } = mainCardsApi.useGetCardQuery(id);
   return (
     <>
       {isFetching && (

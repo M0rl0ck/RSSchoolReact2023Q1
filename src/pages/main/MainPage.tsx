@@ -1,4 +1,4 @@
-import SearchBar from '../../molecules/searchBar/SearchBar';
+import SearchBar from '../../organisms/searchBar/SearchBar';
 import React from 'react';
 import Card from '../../molecules/card/Card';
 import './mainPage.css';
