@@ -1,30 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { SubmitButton } from '../../atoms/button/Button';
 import './searchBar.css';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks';
+import { mainSearchSlice } from '../../store/redusers/mainSearchSlice';
 
-const SEARCH_STORAGE_KEY = 'searchValue';
 interface ISearch {
   searchvalue: string;
 }
-interface ISearchFormProps {
-  callback: (search: string) => void;
-}
 
-export default function SearchForm({ callback }: ISearchFormProps) {
-  const [searchValue, setSearchValue] = useState<string>(
-    localStorage.getItem(SEARCH_STORAGE_KEY) || ''
-  );
-
-  useEffect(() => {
-    callback(searchValue);
-  }, [searchValue, callback]);
+export default function SearchForm() {
+  const dispatch = useAppDispatch();
+  const { setSeatchValue } = mainSearchSlice.actions;
+  const { searchValue } = useAppSelector((state) => state.mainSearchValue);
 
   const { register, handleSubmit } = useForm<ISearch>();
 
   const onSubmit: SubmitHandler<ISearch> = (data) => {
-    setSearchValue(data.searchvalue);
-    localStorage.setItem(SEARCH_STORAGE_KEY, data.searchvalue);
+    dispatch(setSeatchValue(data.searchvalue));
   };
   return (
     <form className="search-form" onSubmit={handleSubmit(onSubmit)}>

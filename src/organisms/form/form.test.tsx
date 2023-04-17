@@ -1,16 +1,17 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Form from './Form';
+import { renderWithProviders } from '../../store/utils/test-utils';
 
 describe('Form', () => {
   it('render form', () => {
-    render(<Form callback={() => {}} />);
+    renderWithProviders(<Form />);
     expect(screen.getByRole('form', { name: '' })).toBeInTheDocument();
     expect(screen.getByRole('textbox')).toBeInTheDocument();
   });
   it('shout set error', async () => {
-    render(<Form callback={() => {}} />);
+    renderWithProviders(<Form />);
     expect(screen.queryByText(/Name must be at least 3 characters/)).not.toBeInTheDocument();
     expect(
       screen.queryByText(/First name or last name must start with a capital letter/)

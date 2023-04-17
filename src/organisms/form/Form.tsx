@@ -2,12 +2,10 @@ import IFormCard from '../../infostructure/IFormCard';
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import './form.css';
-import Modal from '../../molecules/Modal/Modal';
+import Modal from '../../templates/Modal/Modal';
 import { SubmitButton } from '../../atoms/button/Button';
-
-type FormProps = {
-  callback: (card: IFormCard) => void;
-};
+import { formSlice } from '../../store/redusers/formSlice';
+import { useAppDispatch } from '../../store/hooks/hooks';
 
 interface IInputs {
   name: string;
@@ -25,7 +23,9 @@ enum CityEnum {
   Brazil = 'Brazil',
 }
 
-export default function Form({ callback }: FormProps) {
+export default function Form() {
+  const { addCard } = formSlice.actions;
+  const dispatch = useAppDispatch();
   const [createdCard, setCreatedCard] = useState<boolean>(false);
   const {
     register,
@@ -39,7 +39,7 @@ export default function Form({ callback }: FormProps) {
     const id = Date.now();
     const fileUrl = URL.createObjectURL(data.file[0]);
     const card: IFormCard = { name, id, date, country, gender, img: fileUrl };
-    callback(card);
+    dispatch(addCard(card));
     setCreatedCard(true);
     setTimeout(() => {
       closeMessage();

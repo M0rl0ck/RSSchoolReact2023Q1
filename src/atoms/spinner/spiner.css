@@ -8,6 +8,7 @@
 
 .spinner {
   width: 10%;
+  min-width: 150px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 10px #6464ea dashed;
