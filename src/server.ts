@@ -20,11 +20,12 @@ async function startServer() {
 
   app.use('*', async (req, res) => {
     const render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render;
-    render(req.url, res);
+
+    render(req.originalUrl, res);
   });
 
   app.listen(PORT, () => {
-    console.log('Server listen on port: 5173');
+    console.log('Server start on: http://localhost:5173');
   });
 }
 
