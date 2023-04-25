@@ -1,11 +1,7 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import express from 'express';
 import { createServer } from 'vite';
 
 const PORT = 5173;
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 async function startServer() {
   const app = express();
@@ -19,7 +15,7 @@ async function startServer() {
   app.use(vite.middlewares);
 
   app.use('*', async (req, res) => {
-    const render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render;
+    const render = (await vite.ssrLoadModule('/src/server/entry-server.tsx')).render;
 
     render(req.originalUrl, res);
   });

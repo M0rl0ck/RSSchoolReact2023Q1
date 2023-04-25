@@ -1,20 +1,25 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import formReducer from './redusers/formSlice';
 import mainSearchReducer from './redusers/mainSearchSlice';
 import { mainCardsApi } from './API/mainCardsApi';
 
-const store = configureStore({
-  reducer: {
-    [mainCardsApi.reducerPath]: mainCardsApi.reducer,
-    form: formReducer,
-    mainSearchValue: mainSearchReducer,
-  },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(mainCardsApi.middleware),
+const rootReducer = combineReducers({
+  [mainCardsApi.reducerPath]: mainCardsApi.reducer,
+  form: formReducer,
+  mainSearchValue: mainSearchReducer,
 });
 
-type RootState = ReturnType<typeof store.getState>;
-type AppStore = typeof store;
-type AppDispatch = typeof store.dispatch;
+const initStore = (preloadState: RootState | undefined = undefined) => {
+  return configureStore({
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(mainCardsApi.middleware),
+    preloadedState: preloadState,
+  });
+};
 
-export { RootState, AppStore, AppDispatch };
-export default store;
+type RootState = ReturnType<typeof rootReducer>;
+type AppStore = ReturnType<typeof initStore>;
+// type AppDispatch = typeof store.dispatch;
+
+export { RootState, AppStore };
+export default initStore;
