@@ -1,21 +1,22 @@
 /// <reference types="cypress" />
 // import "../support/component";
 
-describe("Just open main page", () => {
-  it("open Mine page", () => {
+describe("Main page", () => {
+  it("open Maine page", () => {
     cy.visit("/");
-    // cy.request("/")
-    //   .its("body")
-    //   .then((html) => {
-    //     const $h2 = Cypress.$(html).find("h2")[0];
-    //     expect($h2).to.have.text("Main page");
-    //     cy.state("document").write(html);
-    //   });
-    // cy.get("input[type='search']");
+    cy.get("input[type='search']").should("have.value", "");
+  });
+  it("open modal card", () => {
+    cy.visit("/");
+    cy.get(".card-container").should("have.length", 20).first().click();
+    cy.get(".card-modal-wrapper");
+  });
+  it("Shoud change search", () => {
+    cy.visit("/");
+    cy.get("input[type='search']").should("have.value", "").type("aaaa");
+    cy.get("input[type='search']").should("have.value", "aaaa");
+    cy.get("input[type='submit']").click();
+    cy.get("input[type='search']").should("have.value", "aaaa");
+    cy.get("p").should("have.text", "Sorry! Don't find elements");
   });
 });
-// it("should be button", () => {
-//   cy.visit("/forms");
-//   cy.get("input[type='submit']");
-// });
-// });
