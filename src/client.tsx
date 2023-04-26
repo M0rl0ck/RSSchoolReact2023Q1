@@ -1,18 +1,20 @@
 import React from 'react';
 import { hydrateRoot } from 'react-dom/client';
-import App from './components/app/App';
 import { BrowserRouter } from 'react-router-dom';
 import initStore from './store/store';
 import { Provider } from 'react-redux';
 import './index.css';
+import AppRouter from './components/routes/AppRouter';
 
 const store = initStore(window.__PRELOADED_STATE__ ? window.__PRELOADED_STATE__ : undefined);
-
-hydrateRoot(
-  document,
+const rootElem = (
   <BrowserRouter>
     <Provider store={store}>
-      <App />
+      <AppRouter />
     </Provider>
   </BrowserRouter>
 );
+
+const container = document.getElementById('root');
+if (!container) throw new Error('Failed to find the root element');
+hydrateRoot(container, rootElem);

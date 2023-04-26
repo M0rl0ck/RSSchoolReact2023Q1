@@ -4,7 +4,6 @@ import Layout from '../Layout';
 import AboutPage from '../../pages/about/AboutPage';
 import MainPage from '../../pages/main/MainPage';
 import Page404 from '../../pages/page404/Page404';
-
 import FormPage from '../../pages/form/FormPage';
 import { PATH } from '../../infostructure/constants';
 

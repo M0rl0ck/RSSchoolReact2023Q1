@@ -1,4 +1,614 @@
 {
+  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/formSlice.ts": {
+    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/formSlice.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 2,
+          "column": 21
+        },
+        "end": {
+          "line": 4,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 18
+        },
+        "end": {
+          "line": 13,
+          "column": 2
+        }
+      },
+      "2": {
+        "start": {
+          "line": 10,
+          "column": 6
+        },
+        "end": {
+          "line": 10,
+          "column": 53
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 20
+        },
+        "end": {
+          "line": 14,
+          "column": 37
+        }
+      },
+      "4": {
+        "start": {
+          "line": 15,
+          "column": 19
+        },
+        "end": {
+          "line": 15,
+          "column": 46
+        }
+      },
+      "5": {
+        "start": {
+          "line": 15,
+          "column": 30
+        },
+        "end": {
+          "line": 15,
+          "column": 46
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 13
+          },
+          "end": {
+            "line": 9,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 32
+          },
+          "end": {
+            "line": 11,
+            "column": 5
+          }
+        },
+        "line": 9
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 19
+          },
+          "end": {
+            "line": 15,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 30
+          },
+          "end": {
+            "line": 15,
+            "column": 46
+          }
+        },
+        "line": 15
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 4,
+      "1": 4,
+      "2": 0,
+      "3": 4,
+      "4": 4,
+      "5": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0
+    },
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "sources": [
+        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/formSlice.ts"
+      ],
+      "mappings": "AAAA,SAAS,mBAAmB;AAS5B,MAAM,eAA8B;AAAA,EAClC,OAAO,CAAC;AACV;AAEA,MAAM,YAAY,YAAY;AAAA,EAC5B,MAAM;AAAA,EACN;AAAA,EACA,UAAU;AAAA,IACR,SAAS,CAAC,OAAO,WAAqC;AACpD,YAAM,QAAQ,CAAC,GAAG,MAAM,OAAO,OAAO,OAAO;AAAA,IAC/C;AAAA,EACF;AACF,CAAC;AAED,MAAM,EAAE,QAAQ,IAAI,UAAU;AAC9B,MAAM,aAAa,CAAC,UAAqB,MAAM,KAAK;AAEpD,eAAe,UAAU;AACzB,SAAS,YAAY,SAAS;",
+      "names": []
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "9066104777dca35af3bda084cc10cff236ddf9d1"
+  },
+  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/mainSearchSlice.ts": {
+    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/mainSearchSlice.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 2,
+          "column": 21
+        },
+        "end": {
+          "line": 4,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 24
+        },
+        "end": {
+          "line": 13,
+          "column": 2
+        }
+      },
+      "2": {
+        "start": {
+          "line": 10,
+          "column": 6
+        },
+        "end": {
+          "line": 10,
+          "column": 41
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 26
+        },
+        "end": {
+          "line": 14,
+          "column": 70
+        }
+      },
+      "4": {
+        "start": {
+          "line": 14,
+          "column": 37
+        },
+        "end": {
+          "line": 14,
+          "column": 70
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 20
+          },
+          "end": {
+            "line": 9,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 39
+          },
+          "end": {
+            "line": 11,
+            "column": 5
+          }
+        },
+        "line": 9
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 26
+          },
+          "end": {
+            "line": 14,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 37
+          },
+          "end": {
+            "line": 14,
+            "column": 70
+          }
+        },
+        "line": 14
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 4,
+      "1": 4,
+      "2": 0,
+      "3": 4,
+      "4": 0
+    },
+    "f": {
+      "0": 0,
+      "1": 0
+    },
+    "b": {},
+    "inputSourceMap": {
+      "version": 3,
+      "sources": [
+        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/mainSearchSlice.ts"
+      ],
+      "mappings": "AAAA,SAAS,mBAAmB;AAQ5B,MAAM,eAAgC;AAAA,EACpC,aAAa;AACf;AAEA,MAAM,kBAAkB,YAAY;AAAA,EAClC,MAAM;AAAA,EACN;AAAA,EACA,UAAU;AAAA,IACR,gBAAgB,CAAC,OAAO,WAAkC;AACxD,YAAM,cAAc,OAAO;AAAA,IAC7B;AAAA,EACF;AACF,CAAC;AAED,MAAM,oBAAoB,CAAC,UAAqB,MAAM,gBAAgB;AAEtE,eAAe,gBAAgB;AAC/B,SAAS,mBAAmB;",
+      "names": []
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "d7b4bdfe94a3d348d313a7047a229788d5ea0649"
+  },
+  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/API/mainCardsApi.ts": {
+    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/API/mainCardsApi.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 2,
+          "column": 16
+        },
+        "end": {
+          "line": 2,
+          "column": 49
+        }
+      },
+      "1": {
+        "start": {
+          "line": 3,
+          "column": 21
+        },
+        "end": {
+          "line": 3,
+          "column": 33
+        }
+      },
+      "2": {
+        "start": {
+          "line": 4,
+          "column": 21
+        },
+        "end": {
+          "line": 22,
+          "column": 2
+        }
+      },
+      "3": {
+        "start": {
+          "line": 7,
+          "column": 25
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      },
+      "4": {
+        "start": {
+          "line": 9,
+          "column": 31
+        },
+        "end": {
+          "line": 14,
+          "column": 7
+        }
+      },
+      "5": {
+        "start": {
+          "line": 17,
+          "column": 22
+        },
+        "end": {
+          "line": 19,
+          "column": 7
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 13
+          },
+          "end": {
+            "line": 7,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 25
+          },
+          "end": {
+            "line": 21,
+            "column": 3
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 13
+          },
+          "end": {
+            "line": 9,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 31
+          },
+          "end": {
+            "line": 14,
+            "column": 7
+          }
+        },
+        "line": 9
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 17,
+            "column": 13
+          },
+          "end": {
+            "line": 17,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 22
+          },
+          "end": {
+            "line": 19,
+            "column": 7
+          }
+        },
+        "line": 17
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 14
+          },
+          "end": {
+            "line": 9,
+            "column": 25
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 9,
+              "column": 23
+            },
+            "end": {
+              "line": 9,
+              "column": 25
+            }
+          }
+        ],
+        "line": 9
+      }
+    },
+    "s": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 0,
+      "5": 0
+    },
+    "f": {
+      "0": 4,
+      "1": 0,
+      "2": 0
+    },
+    "b": {
+      "0": [
+        0
+      ]
+    },
+    "inputSourceMap": {
+      "version": 3,
+      "sources": [
+        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/API/mainCardsApi.ts"
+      ],
+      "mappings": "AAAA,SAAS,WAAW,sBAAsB;AAO1C,MAAM,UAAU;AAChB,MAAM,eAAe;AAErB,MAAM,eAAe,UAAU;AAAA,EAC7B,aAAa;AAAA,EACb,WAAW,eAAe,EAAE,SAAS,QAAQ,CAAC;AAAA,EAC9C,WAAW,CAAC,WAAW;AAAA,IACrB,aAAa,MAAM,MAA+B;AAAA,MAChD,OAAO,CAAC,SAAS,QAAQ;AAAA,QACvB,KAAK;AAAA,QACL,QAAQ;AAAA,UACN,MAAM;AAAA,QACR;AAAA,MACF;AAAA,IACF,CAAC;AAAA,IACD,SAAS,MAAM,MAAmC;AAAA,MAChD,OAAO,CAAC,QAAQ;AAAA,QACd,KAAK,GAAG,gBAAgB,GAAG,SAAS;AAAA,MACtC;AAAA,IACF,CAAC;AAAA,EACH;AACF,CAAC;AAED,SAAS;",
+      "names": []
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "478dcf58b33db79643321ad4e46cf9999aa9d524"
+  },
+  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/store.ts": {
+    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/store.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 20
+        },
+        "end": {
+          "line": 9,
+          "column": 2
+        }
+      },
+      "1": {
+        "start": {
+          "line": 10,
+          "column": 18
+        },
+        "end": {
+          "line": 16,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 13,
+          "column": 42
+        },
+        "end": {
+          "line": 13,
+          "column": 96
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 18
+          },
+          "end": {
+            "line": 10,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 45
+          },
+          "end": {
+            "line": 16,
+            "column": 1
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 16
+          },
+          "end": {
+            "line": 13,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 42
+          },
+          "end": {
+            "line": 13,
+            "column": 96
+          }
+        },
+        "line": 13
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 19
+          },
+          "end": {
+            "line": 10,
+            "column": 40
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 10,
+              "column": 34
+            },
+            "end": {
+              "line": 10,
+              "column": 40
+            }
+          }
+        ],
+        "line": 10
+      }
+    },
+    "s": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "f": {
+      "0": 4,
+      "1": 4
+    },
+    "b": {
+      "0": [
+        0
+      ]
+    },
+    "inputSourceMap": {
+      "version": 3,
+      "sources": [
+        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/store.ts"
+      ],
+      "mappings": "AAAA,SAAS,iBAAiB,sBAAsB;AAChD,OAAO,iBAAiB;AACxB,OAAO,uBAAuB;AAC9B,SAAS,oBAAoB;AAE7B,MAAM,cAAc,gBAAgB;AAAA,EAClC,CAAC,aAAa,WAAW,GAAG,aAAa;AAAA,EACzC,MAAM;AAAA,EACN,iBAAiB;AACnB,CAAC;AAED,MAAM,YAAY,CAAC,eAAsC,WAAc;AACrE,SAAO,eAAe;AAAA,IACpB,SAAS;AAAA,IACT,YAAY,CAAC,yBAAyB,qBAAqB,EAAE,OAAO,aAAa,UAAU;AAAA,IAC3F,gBAAgB;AAAA,EAClB,CAAC;AACH;AAMA;AACA,eAAe;",
+      "names": []
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "6d2300fd678ab2563abf1a44bf5a575052c8109d"
+  },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/infostructure/constants.ts": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/infostructure/constants.ts",
     "statementMap": {
@@ -128,20 +738,20 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 3,
-      "5": 3
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4
     },
     "f": {
-      "0": 3
+      "0": 4
     },
     "b": {
       "0": [
-        3,
-        3
+        4,
+        4
       ]
     },
     "inputSourceMap": {
@@ -632,23 +1242,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -656,22 +1266,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
+      "0": 4,
+      "1": 4,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -1180,23 +1790,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -1204,22 +1814,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
+      "0": 4,
+      "1": 4,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -1844,29 +2454,29 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 3,
-      "21": 0,
-      "22": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 2,
+      "22": 2,
       "23": 0,
       "24": 0,
       "25": 0,
@@ -1874,27 +2484,27 @@
       "27": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 0,
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 2,
       "4": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
-        3,
+        4,
         0
       ],
       "4": [
@@ -1975,10 +2585,10 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3
+      "0": 4
     },
     "f": {
-      "0": 3
+      "0": 4
     },
     "b": {},
     "inputSourceMap": {
@@ -2536,23 +3146,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -2560,22 +3170,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
+      "0": 4,
+      "1": 4,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -2633,8 +3243,8 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 3,
-      "1": 3
+      "0": 4,
+      "1": 4
     },
     "f": {},
     "b": {},
@@ -2648,134 +3258,6 @@
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "212893251d544eb7ae8c22fef1fd167a02c5b7b3"
-  },
-  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/mainSearchSlice.ts": {
-    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/mainSearchSlice.ts",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 2,
-          "column": 21
-        },
-        "end": {
-          "line": 4,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 5,
-          "column": 24
-        },
-        "end": {
-          "line": 13,
-          "column": 2
-        }
-      },
-      "2": {
-        "start": {
-          "line": 10,
-          "column": 6
-        },
-        "end": {
-          "line": 10,
-          "column": 41
-        }
-      },
-      "3": {
-        "start": {
-          "line": 14,
-          "column": 26
-        },
-        "end": {
-          "line": 14,
-          "column": 70
-        }
-      },
-      "4": {
-        "start": {
-          "line": 14,
-          "column": 37
-        },
-        "end": {
-          "line": 14,
-          "column": 70
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 9,
-            "column": 20
-          },
-          "end": {
-            "line": 9,
-            "column": 21
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 9,
-            "column": 39
-          },
-          "end": {
-            "line": 11,
-            "column": 5
-          }
-        },
-        "line": 9
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 14,
-            "column": 26
-          },
-          "end": {
-            "line": 14,
-            "column": 27
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 14,
-            "column": 37
-          },
-          "end": {
-            "line": 14,
-            "column": 70
-          }
-        },
-        "line": 14
-      }
-    },
-    "branchMap": {},
-    "s": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
-      "3": 3,
-      "4": 0
-    },
-    "f": {
-      "0": 0,
-      "1": 0
-    },
-    "b": {},
-    "inputSourceMap": {
-      "version": 3,
-      "sources": [
-        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/mainSearchSlice.ts"
-      ],
-      "mappings": "AAAA,SAAS,mBAAmB;AAQ5B,MAAM,eAAgC;AAAA,EACpC,aAAa;AACf;AAEA,MAAM,kBAAkB,YAAY;AAAA,EAClC,MAAM;AAAA,EACN;AAAA,EACA,UAAU;AAAA,IACR,gBAAgB,CAAC,OAAO,WAAkC;AACxD,YAAM,cAAc,OAAO;AAAA,IAC7B;AAAA,EACF;AACF,CAAC;AAED,MAAM,oBAAoB,CAAC,UAAqB,MAAM,gBAAgB;AAEtE,eAAe,gBAAgB;AAC/B,SAAS,mBAAmB;",
-      "names": []
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "d7b4bdfe94a3d348d313a7047a229788d5ea0649"
   },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/organisms/searchBar/SearchBar.tsx": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/organisms/searchBar/SearchBar.tsx",
@@ -3434,34 +3916,34 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 2,
+      "13": 4,
+      "14": 2,
+      "15": 2,
       "16": 0,
-      "17": 1,
-      "18": 3,
-      "19": 1,
-      "20": 3,
-      "21": 3,
-      "22": 3,
-      "23": 3,
-      "24": 3,
-      "25": 3,
-      "26": 0,
-      "27": 0,
+      "17": 2,
+      "18": 4,
+      "19": 2,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 2,
+      "27": 2,
       "28": 0,
       "29": 0,
       "30": 0,
@@ -3469,25 +3951,25 @@
       "32": 0
     },
     "f": {
-      "0": 3,
-      "1": 1,
-      "2": 1,
+      "0": 4,
+      "1": 2,
+      "2": 4,
       "3": 0,
-      "4": 1,
-      "5": 0,
+      "4": 2,
+      "5": 2,
       "6": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -4041,24 +4523,24 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
       "9": 0,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 3,
-      "16": 0,
-      "17": 0,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 2,
+      "17": 2,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -4066,23 +4548,23 @@
       "22": 0
     },
     "f": {
-      "0": 3,
+      "0": 4,
       "1": 0,
       "2": 0,
-      "3": 0,
+      "3": 2,
       "4": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -4594,23 +5076,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 20,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 40,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -4618,22 +5100,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
-      "1": 20,
-      "2": 0,
+      "0": 4,
+      "1": 40,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -4666,201 +5148,6 @@
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "f4483814d5cd679d20427203214188d45398e832"
-  },
-  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/API/mainCardsApi.ts": {
-    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/API/mainCardsApi.ts",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 2,
-          "column": 16
-        },
-        "end": {
-          "line": 2,
-          "column": 49
-        }
-      },
-      "1": {
-        "start": {
-          "line": 3,
-          "column": 21
-        },
-        "end": {
-          "line": 3,
-          "column": 33
-        }
-      },
-      "2": {
-        "start": {
-          "line": 4,
-          "column": 21
-        },
-        "end": {
-          "line": 22,
-          "column": 2
-        }
-      },
-      "3": {
-        "start": {
-          "line": 7,
-          "column": 25
-        },
-        "end": {
-          "line": 21,
-          "column": 3
-        }
-      },
-      "4": {
-        "start": {
-          "line": 9,
-          "column": 31
-        },
-        "end": {
-          "line": 14,
-          "column": 7
-        }
-      },
-      "5": {
-        "start": {
-          "line": 17,
-          "column": 22
-        },
-        "end": {
-          "line": 19,
-          "column": 7
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 7,
-            "column": 13
-          },
-          "end": {
-            "line": 7,
-            "column": 14
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 7,
-            "column": 25
-          },
-          "end": {
-            "line": 21,
-            "column": 3
-          }
-        },
-        "line": 7
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 9,
-            "column": 13
-          },
-          "end": {
-            "line": 9,
-            "column": 14
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 9,
-            "column": 31
-          },
-          "end": {
-            "line": 14,
-            "column": 7
-          }
-        },
-        "line": 9
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 17,
-            "column": 13
-          },
-          "end": {
-            "line": 17,
-            "column": 14
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 17,
-            "column": 22
-          },
-          "end": {
-            "line": 19,
-            "column": 7
-          }
-        },
-        "line": 17
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 9,
-            "column": 14
-          },
-          "end": {
-            "line": 9,
-            "column": 25
-          }
-        },
-        "type": "default-arg",
-        "locations": [
-          {
-            "start": {
-              "line": 9,
-              "column": 23
-            },
-            "end": {
-              "line": 9,
-              "column": 25
-            }
-          }
-        ],
-        "line": 9
-      }
-    },
-    "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 0,
-      "5": 0
-    },
-    "f": {
-      "0": 3,
-      "1": 0,
-      "2": 0
-    },
-    "b": {
-      "0": [
-        0
-      ]
-    },
-    "inputSourceMap": {
-      "version": 3,
-      "sources": [
-        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/API/mainCardsApi.ts"
-      ],
-      "mappings": "AAAA,SAAS,WAAW,sBAAsB;AAO1C,MAAM,UAAU;AAChB,MAAM,eAAe;AAErB,MAAM,eAAe,UAAU;AAAA,EAC7B,aAAa;AAAA,EACb,WAAW,eAAe,EAAE,SAAS,QAAQ,CAAC;AAAA,EAC9C,WAAW,CAAC,WAAW;AAAA,IACrB,aAAa,MAAM,MAA+B;AAAA,MAChD,OAAO,CAAC,SAAS,QAAQ;AAAA,QACvB,KAAK;AAAA,QACL,QAAQ;AAAA,UACN,MAAM;AAAA,QACR;AAAA,MACF;AAAA,IACF,CAAC;AAAA,IACD,SAAS,MAAM,MAAmC;AAAA,MAChD,OAAO,CAAC,QAAQ;AAAA,QACd,KAAK,GAAG,gBAAgB,GAAG,SAAS;AAAA,MACtC;AAAA,IACF,CAAC;AAAA,EACH;AACF,CAAC;AAED,SAAS;",
-      "names": []
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "478dcf58b33db79643321ad4e46cf9999aa9d524"
   },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/atoms/spinner/Spinner.tsx": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/atoms/spinner/Spinner.tsx",
@@ -5337,23 +5624,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -5361,22 +5648,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
+      "0": 4,
       "1": 0,
-      "2": 0,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -6108,28 +6395,28 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
       "9": 0,
       "10": 0,
       "11": 0,
-      "12": 3,
+      "12": 4,
       "13": 0,
-      "14": 3,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 0,
-      "21": 0,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 2,
+      "21": 2,
       "22": 0,
       "23": 0,
       "24": 0,
@@ -6137,20 +6424,20 @@
       "26": 0
     },
     "f": {
-      "0": 3,
+      "0": 4,
       "1": 0,
       "2": 0,
-      "3": 0,
+      "3": 2,
       "4": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
         0,
@@ -6170,7 +6457,7 @@
         0
       ],
       "6": [
-        3,
+        4,
         0
       ],
       "7": [
@@ -6860,32 +7147,32 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 20,
-      "10": 20,
-      "11": 20,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 40,
+      "10": 40,
+      "11": 40,
       "12": 0,
       "13": 0,
-      "14": 20,
+      "14": 40,
       "15": 0,
-      "16": 20,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 3,
-      "21": 3,
-      "22": 3,
-      "23": 3,
-      "24": 0,
-      "25": 0,
+      "16": 40,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 2,
+      "25": 2,
       "26": 0,
       "27": 0,
       "28": 0,
@@ -6893,28 +7180,28 @@
       "30": 0
     },
     "f": {
-      "0": 3,
-      "1": 20,
+      "0": 4,
+      "1": 40,
       "2": 0,
       "3": 0,
-      "4": 0,
+      "4": 2,
       "5": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        20,
+        40,
         0
       ],
       "3": [
-        3,
+        4,
         0
       ],
       "4": [
@@ -7464,24 +7751,24 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 20,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 3,
-      "16": 0,
-      "17": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 40,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 2,
+      "17": 2,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -7489,23 +7776,23 @@
       "22": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
-      "2": 20,
-      "3": 0,
+      "0": 4,
+      "1": 4,
+      "2": 40,
+      "3": 2,
       "4": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -8015,23 +8302,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -8039,22 +8326,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
+      "0": 4,
       "1": 0,
-      "2": 0,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -8804,30 +9091,30 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 3,
-      "15": 1,
-      "16": 3,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 3,
-      "21": 3,
-      "22": 0,
-      "23": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 2,
+      "10": 2,
+      "11": 4,
+      "12": 2,
+      "13": 2,
+      "14": 4,
+      "15": 2,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 2,
+      "23": 2,
       "24": 0,
       "25": 0,
       "26": 0,
@@ -8835,38 +9122,38 @@
       "28": 0
     },
     "f": {
-      "0": 3,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 0,
+      "0": 4,
+      "1": 2,
+      "2": 4,
+      "3": 2,
+      "4": 2,
       "5": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        1,
+        2,
         0
       ],
       "3": [
-        1,
+        2,
         0
       ],
       "4": [
-        1,
-        1,
-        1,
-        1
+        2,
+        2,
+        2,
+        2
       ],
       "5": [
-        3,
+        4,
         0
       ],
       "6": [
@@ -8975,145 +9262,6 @@
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "618b68528482650178efcf38911ea67ada577f4e"
-  },
-  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/formSlice.ts": {
-    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/formSlice.ts",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 2,
-          "column": 21
-        },
-        "end": {
-          "line": 4,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 5,
-          "column": 18
-        },
-        "end": {
-          "line": 13,
-          "column": 2
-        }
-      },
-      "2": {
-        "start": {
-          "line": 10,
-          "column": 6
-        },
-        "end": {
-          "line": 10,
-          "column": 53
-        }
-      },
-      "3": {
-        "start": {
-          "line": 14,
-          "column": 20
-        },
-        "end": {
-          "line": 14,
-          "column": 37
-        }
-      },
-      "4": {
-        "start": {
-          "line": 15,
-          "column": 19
-        },
-        "end": {
-          "line": 15,
-          "column": 46
-        }
-      },
-      "5": {
-        "start": {
-          "line": 15,
-          "column": 30
-        },
-        "end": {
-          "line": 15,
-          "column": 46
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 9,
-            "column": 13
-          },
-          "end": {
-            "line": 9,
-            "column": 14
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 9,
-            "column": 32
-          },
-          "end": {
-            "line": 11,
-            "column": 5
-          }
-        },
-        "line": 9
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 15,
-            "column": 19
-          },
-          "end": {
-            "line": 15,
-            "column": 20
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 15,
-            "column": 30
-          },
-          "end": {
-            "line": 15,
-            "column": 46
-          }
-        },
-        "line": 15
-      }
-    },
-    "branchMap": {},
-    "s": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 0
-    },
-    "f": {
-      "0": 0,
-      "1": 0
-    },
-    "b": {},
-    "inputSourceMap": {
-      "version": 3,
-      "sources": [
-        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/redusers/formSlice.ts"
-      ],
-      "mappings": "AAAA,SAAS,mBAAmB;AAS5B,MAAM,eAA8B;AAAA,EAClC,OAAO,CAAC;AACV;AAEA,MAAM,YAAY,YAAY;AAAA,EAC5B,MAAM;AAAA,EACN;AAAA,EACA,UAAU;AAAA,IACR,SAAS,CAAC,OAAO,WAAqC;AACpD,YAAM,QAAQ,CAAC,GAAG,MAAM,OAAO,OAAO,OAAO;AAAA,IAC/C;AAAA,EACF;AACF,CAAC;AAED,MAAM,EAAE,QAAQ,IAAI,UAAU;AAC9B,MAAM,aAAa,CAAC,UAAqB,MAAM,KAAK;AAEpD,eAAe,UAAU;AACzB,SAAS,YAAY,SAAS;",
-      "names": []
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "9066104777dca35af3bda084cc10cff236ddf9d1"
   },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/organisms/form/Form.tsx": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/organisms/form/Form.tsx",
@@ -10502,21 +10650,21 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
       "15": 2,
       "16": 2,
       "17": 2,
@@ -10539,16 +10687,16 @@
       "34": 0,
       "35": 0,
       "36": 0,
-      "37": 3,
+      "37": 4,
       "38": 2,
-      "39": 3,
-      "40": 3,
-      "41": 3,
-      "42": 3,
-      "43": 3,
-      "44": 3,
-      "45": 0,
-      "46": 0,
+      "39": 4,
+      "40": 4,
+      "41": 4,
+      "42": 4,
+      "43": 4,
+      "44": 4,
+      "45": 2,
+      "46": 2,
       "47": 0,
       "48": 0,
       "49": 0,
@@ -10556,8 +10704,8 @@
       "51": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 2,
       "3": 0,
       "4": 0,
@@ -10567,21 +10715,21 @@
       "8": 0,
       "9": 0,
       "10": 2,
-      "11": 0,
+      "11": 2,
       "12": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
-        3
+        4,
+        4
       ],
       "3": [
         0,
@@ -10624,7 +10772,7 @@
         0
       ],
       "13": [
-        3,
+        4,
         0
       ],
       "14": [
@@ -11178,23 +11326,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
       "8": 0,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -11202,22 +11350,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
+      "0": 4,
       "1": 0,
-      "2": 0,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -11835,29 +11983,29 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
       "9": 2,
       "10": 2,
       "11": 2,
       "12": 2,
-      "13": 3,
+      "13": 4,
       "14": 2,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 3,
-      "21": 0,
-      "22": 0,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 2,
+      "22": 2,
       "23": 0,
       "24": 0,
       "25": 0,
@@ -11865,24 +12013,24 @@
       "27": 0
     },
     "f": {
-      "0": 3,
+      "0": 4,
       "1": 2,
       "2": 2,
       "3": 2,
-      "4": 0,
+      "4": 2,
       "5": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -12393,23 +12541,23 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
+      "0": 4,
+      "1": 4,
       "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 2,
+      "16": 2,
       "17": 0,
       "18": 0,
       "19": 0,
@@ -12417,22 +12565,22 @@
       "21": 0
     },
     "f": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
+      "0": 4,
+      "1": 4,
+      "2": 2,
       "3": 0
     },
     "b": {
       "0": [
-        3,
+        4,
         0
       ],
       "1": [
         0,
-        3
+        4
       ],
       "2": [
-        3,
+        4,
         0
       ],
       "3": [
@@ -12446,7 +12594,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAcyC;AAdzC,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,SAASC,QAAQC,aAAa;AAC9B,OAAOC,YAAY;AACnB,OAAOC,eAAe;AACtB,OAAOC,cAAc;AACrB,OAAOC,aAAa;AAEpB,OAAOC,cAAc;AACrB,SAASC,YAAY;AAErB,SAASC,YAAY;AACnB,SACE,uBAAC,SAAI,WAAU,OACb,iCAAC,UACC,iCAAC,SAAM,MAAMD,KAAKE,MAAM,SAAS,uBAAC,YAAD;AAAA;AAAA;AAAA;AAAA,SAAO,GACtC;AAAA,2BAAC,SAAM,OAAK,MAAC,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,WAAS,KAA/B;AAAA;AAAA;AAAA;AAAA,WAAmC;AAAA,IACnC,uBAAC,SAAM,MAAMF,KAAKG,OAAO,SAAS,uBAAC,eAAD;AAAA;AAAA;AAAA;AAAA,WAAU,KAA5C;AAAA;AAAA;AAAA;AAAA,WAAgD;AAAA,IAChD,uBAAC,SAAM,MAAMH,KAAKI,OAAO,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,WAAS,KAA3C;AAAA;AAAA;AAAA;AAAA,WAA+C;AAAA,IAC/C,uBAAC,SAAM,MAAMJ,KAAKK,SAAS,SAAS,uBAAC,aAAD;AAAA;AAAA;AAAA;AAAA,WAAQ,KAA5C;AAAA;AAAA;AAAA;AAAA,WAAgD;AAAA,OAJlD;AAAA;AAAA;AAAA;AAAA,SAKA,KANF;AAAA;AAAA;AAAA;AAAA,SAOA,KARF;AAAA;AAAA;AAAA;AAAA,SASA;AAEJ;AAACC,KAbQL;AAeT,eAAeA;AAAU;AAAAM",
+      "mappings": "AAayC;AAbzC,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,SAASC,QAAQC,aAAa;AAC9B,OAAOC,YAAY;AACnB,OAAOC,eAAe;AACtB,OAAOC,cAAc;AACrB,OAAOC,aAAa;AACpB,OAAOC,cAAc;AACrB,SAASC,YAAY;AAErB,SAASC,YAAY;AACnB,SACE,uBAAC,SAAI,WAAU,OACb,iCAAC,UACC,iCAAC,SAAM,MAAMD,KAAKE,MAAM,SAAS,uBAAC,YAAD;AAAA;AAAA;AAAA;AAAA,SAAO,GACtC;AAAA,2BAAC,SAAM,OAAK,MAAC,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,WAAS,KAA/B;AAAA;AAAA;AAAA;AAAA,WAAmC;AAAA,IACnC,uBAAC,SAAM,MAAMF,KAAKG,OAAO,SAAS,uBAAC,eAAD;AAAA;AAAA;AAAA;AAAA,WAAU,KAA5C;AAAA;AAAA;AAAA;AAAA,WAAgD;AAAA,IAChD,uBAAC,SAAM,MAAMH,KAAKI,OAAO,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,WAAS,KAA3C;AAAA;AAAA;AAAA;AAAA,WAA+C;AAAA,IAC/C,uBAAC,SAAM,MAAMJ,KAAKK,SAAS,SAAS,uBAAC,aAAD;AAAA;AAAA;AAAA;AAAA,WAAQ,KAA5C;AAAA;AAAA;AAAA;AAAA,WAAgD;AAAA,OAJlD;AAAA;AAAA;AAAA;AAAA,SAKA,KANF;AAAA;AAAA;AAAA;AAAA,SAOA,KARF;AAAA;AAAA;AAAA;AAAA,SASA;AAEJ;AAACC,KAbQL;AAeT,eAAeA;AAAU;AAAAM",
       "names": [
         "React",
         "Routes",
@@ -12471,700 +12619,7 @@
       "file": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/routes/AppRouter.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c6bf9134a982bcb9bc04fdb932a5513f434ff687"
-  },
-  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/app/App.tsx": {
-    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/app/App.tsx",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 5,
-          "column": 0
-        },
-        "end": {
-          "line": 15,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 6,
-          "column": 2
-        },
-        "end": {
-          "line": 8,
-          "column": 3
-        }
-      },
-      "2": {
-        "start": {
-          "line": 7,
-          "column": 4
-        },
-        "end": {
-          "line": 7,
-          "column": 165
-        }
-      },
-      "3": {
-        "start": {
-          "line": 9,
-          "column": 2
-        },
-        "end": {
-          "line": 9,
-          "column": 39
-        }
-      },
-      "4": {
-        "start": {
-          "line": 10,
-          "column": 2
-        },
-        "end": {
-          "line": 10,
-          "column": 39
-        }
-      },
-      "5": {
-        "start": {
-          "line": 11,
-          "column": 2
-        },
-        "end": {
-          "line": 13,
-          "column": 4
-        }
-      },
-      "6": {
-        "start": {
-          "line": 12,
-          "column": 4
-        },
-        "end": {
-          "line": 12,
-          "column": 121
-        }
-      },
-      "7": {
-        "start": {
-          "line": 14,
-          "column": 2
-        },
-        "end": {
-          "line": 14,
-          "column": 75
-        }
-      },
-      "8": {
-        "start": {
-          "line": 19,
-          "column": 2
-        },
-        "end": {
-          "line": 70,
-          "column": 11
-        }
-      },
-      "9": {
-        "start": {
-          "line": 72,
-          "column": 0
-        },
-        "end": {
-          "line": 72,
-          "column": 9
-        }
-      },
-      "10": {
-        "start": {
-          "line": 75,
-          "column": 0
-        },
-        "end": {
-          "line": 75,
-          "column": 24
-        }
-      },
-      "11": {
-        "start": {
-          "line": 76,
-          "column": 0
-        },
-        "end": {
-          "line": 92,
-          "column": 1
-        }
-      },
-      "12": {
-        "start": {
-          "line": 77,
-          "column": 2
-        },
-        "end": {
-          "line": 77,
-          "column": 39
-        }
-      },
-      "13": {
-        "start": {
-          "line": 78,
-          "column": 2
-        },
-        "end": {
-          "line": 78,
-          "column": 39
-        }
-      },
-      "14": {
-        "start": {
-          "line": 79,
-          "column": 2
-        },
-        "end": {
-          "line": 91,
-          "column": 5
-        }
-      },
-      "15": {
-        "start": {
-          "line": 83,
-          "column": 4
-        },
-        "end": {
-          "line": 83,
-          "column": 147
-        }
-      },
-      "16": {
-        "start": {
-          "line": 84,
-          "column": 4
-        },
-        "end": {
-          "line": 90,
-          "column": 7
-        }
-      },
-      "17": {
-        "start": {
-          "line": 85,
-          "column": 6
-        },
-        "end": {
-          "line": 86,
-          "column": 15
-        }
-      },
-      "18": {
-        "start": {
-          "line": 86,
-          "column": 8
-        },
-        "end": {
-          "line": 86,
-          "column": 15
-        }
-      },
-      "19": {
-        "start": {
-          "line": 87,
-          "column": 32
-        },
-        "end": {
-          "line": 87,
-          "column": 115
-        }
-      },
-      "20": {
-        "start": {
-          "line": 88,
-          "column": 6
-        },
-        "end": {
-          "line": 89,
-          "column": 54
-        }
-      },
-      "21": {
-        "start": {
-          "line": 89,
-          "column": 8
-        },
-        "end": {
-          "line": 89,
-          "column": 54
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 11,
-            "column": 24
-          },
-          "end": {
-            "line": 11,
-            "column": 25
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 11,
-            "column": 38
-          },
-          "end": {
-            "line": 13,
-            "column": 3
-          }
-        },
-        "line": 11
-      },
-      "1": {
-        "name": "App",
-        "decl": {
-          "start": {
-            "line": 18,
-            "column": 9
-          },
-          "end": {
-            "line": 18,
-            "column": 12
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 18,
-            "column": 15
-          },
-          "end": {
-            "line": 71,
-            "column": 1
-          }
-        },
-        "line": 18
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 82,
-            "column": 9
-          },
-          "end": {
-            "line": 82,
-            "column": 10
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 82,
-            "column": 29
-          },
-          "end": {
-            "line": 91,
-            "column": 3
-          }
-        },
-        "line": 82
-      },
-      "3": {
-        "name": "(anonymous_3)",
-        "decl": {
-          "start": {
-            "line": 84,
-            "column": 27
-          },
-          "end": {
-            "line": 84,
-            "column": 28
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 84,
-            "column": 44
-          },
-          "end": {
-            "line": 90,
-            "column": 5
-          }
-        },
-        "line": 84
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 5,
-            "column": 0
-          },
-          "end": {
-            "line": 15,
-            "column": 1
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 5,
-              "column": 0
-            },
-            "end": {
-              "line": 15,
-              "column": 1
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 5
-      },
-      "1": {
-        "loc": {
-          "start": {
-            "line": 6,
-            "column": 2
-          },
-          "end": {
-            "line": 8,
-            "column": 3
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 6,
-              "column": 2
-            },
-            "end": {
-              "line": 8,
-              "column": 3
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 6
-      },
-      "2": {
-        "loc": {
-          "start": {
-            "line": 76,
-            "column": 0
-          },
-          "end": {
-            "line": 92,
-            "column": 1
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 76,
-              "column": 0
-            },
-            "end": {
-              "line": 92,
-              "column": 1
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 76
-      },
-      "3": {
-        "loc": {
-          "start": {
-            "line": 85,
-            "column": 6
-          },
-          "end": {
-            "line": 86,
-            "column": 15
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 85,
-              "column": 6
-            },
-            "end": {
-              "line": 86,
-              "column": 15
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 85
-      },
-      "4": {
-        "loc": {
-          "start": {
-            "line": 88,
-            "column": 6
-          },
-          "end": {
-            "line": 89,
-            "column": 54
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 88,
-              "column": 6
-            },
-            "end": {
-              "line": 89,
-              "column": 54
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 88
-      }
-    },
-    "s": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 9,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 3,
-      "14": 3,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0
-    },
-    "f": {
-      "0": 3,
-      "1": 9,
-      "2": 0,
-      "3": 0
-    },
-    "b": {
-      "0": [
-        3,
-        0
-      ],
-      "1": [
-        0,
-        3
-      ],
-      "2": [
-        3,
-        0
-      ],
-      "3": [
-        0,
-        0
-      ],
-      "4": [
-        0,
-        0
-      ]
-    },
-    "inputSourceMap": {
-      "version": 3,
-      "mappings": "AAQQ;AARR,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAO;AACP,OAAOC,eAAe;AAEtB,SAASC,MAAM;AACb,SACE,uBAAC,UAAK,MAAK,MACT;AAAA,2BAAC,UACC;AAAA,6BAAC,YACC,MAAK,UACL,yBAAyB;AAAA,QACvBC,QAAS;AAAA;AAAA;AAAA;AAAA;AAAA,MAKX,KARF;AAAA;AAAA;AAAA;AAAA,aASC;AAAA,MACD,uBAAC,UAAK,SAAQ,WAAd;AAAA;AAAA;AAAA;AAAA,aAAqB;AAAA,MACrB,uBAAC,UAAK,KAAI,QAAO,MAAK,iBAAgB,MAAK,eAA3C;AAAA;AAAA;AAAA;AAAA,aAAsD;AAAA,MACtD,uBAAC,UAAK,MAAK,YAAW,SAAQ,2CAA9B;AAAA;AAAA;AAAA;AAAA,aAAqE;AAAA,MACrE,uBAAC,WAAM,sCAAP;AAAA;AAAA;AAAA;AAAA,aAA6B;AAAA,SAd/B;AAAA;AAAA;AAAA;AAAA,WAeA;AAAA,IACA,uBAAC,UACC,iCAAC,eAAD;AAAA;AAAA;AAAA;AAAA,WAAU,KADZ;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,OAnBF;AAAA;AAAA;AAAA;AAAA,SAoBA;AAEJ;AAACC,KAxBQF;AA0BT,eAAeA;AAAI;AAAAG",
-      "names": [
-        "React",
-        "AppRouter",
-        "App",
-        "__html",
-        "_c",
-        "$RefreshReg$"
-      ],
-      "sources": [
-        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/app/App.tsx"
-      ],
-      "file": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/app/App.tsx"
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "736f6b1d442c42f98cc9ad72755b07adf4a2419a"
-  },
-  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/store.ts": {
-    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/store.ts",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 5,
-          "column": 20
-        },
-        "end": {
-          "line": 9,
-          "column": 2
-        }
-      },
-      "1": {
-        "start": {
-          "line": 10,
-          "column": 18
-        },
-        "end": {
-          "line": 16,
-          "column": 1
-        }
-      },
-      "2": {
-        "start": {
-          "line": 11,
-          "column": 2
-        },
-        "end": {
-          "line": 15,
-          "column": 5
-        }
-      },
-      "3": {
-        "start": {
-          "line": 13,
-          "column": 42
-        },
-        "end": {
-          "line": 13,
-          "column": 96
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 10,
-            "column": 18
-          },
-          "end": {
-            "line": 10,
-            "column": 19
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 10,
-            "column": 45
-          },
-          "end": {
-            "line": 16,
-            "column": 1
-          }
-        },
-        "line": 10
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 13,
-            "column": 16
-          },
-          "end": {
-            "line": 13,
-            "column": 17
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 13,
-            "column": 42
-          },
-          "end": {
-            "line": 13,
-            "column": 96
-          }
-        },
-        "line": 13
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 10,
-            "column": 19
-          },
-          "end": {
-            "line": 10,
-            "column": 40
-          }
-        },
-        "type": "default-arg",
-        "locations": [
-          {
-            "start": {
-              "line": 10,
-              "column": 34
-            },
-            "end": {
-              "line": 10,
-              "column": 40
-            }
-          }
-        ],
-        "line": 10
-      }
-    },
-    "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3
-    },
-    "f": {
-      "0": 3,
-      "1": 3
-    },
-    "b": {
-      "0": [
-        0
-      ]
-    },
-    "inputSourceMap": {
-      "version": 3,
-      "sources": [
-        "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/store/store.ts"
-      ],
-      "mappings": "AAAA,SAAS,iBAAiB,sBAAsB;AAChD,OAAO,iBAAiB;AACxB,OAAO,uBAAuB;AAC9B,SAAS,oBAAoB;AAE7B,MAAM,cAAc,gBAAgB;AAAA,EAClC,CAAC,aAAa,WAAW,GAAG,aAAa;AAAA,EACzC,MAAM;AAAA,EACN,iBAAiB;AACnB,CAAC;AAED,MAAM,YAAY,CAAC,eAAsC,WAAc;AACrE,SAAO,eAAe;AAAA,IACpB,SAAS;AAAA,IACT,YAAY,CAAC,yBAAyB,qBAAqB,EAAE,OAAO,aAAa,UAAU;AAAA,IAC3F,gBAAgB;AAAA,EAClB,CAAC;AACH;AAMA;AACA,eAAe;",
-      "names": []
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "6d2300fd678ab2563abf1a44bf5a575052c8109d"
+    "hash": "30dfb64c554bea1b3bdc77e1bdf412c8d5bb2a45"
   },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/client.tsx": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/client.tsx",
@@ -13182,11 +12637,51 @@
       "1": {
         "start": {
           "line": 9,
-          "column": 0
+          "column": 33
         },
         "end": {
           "line": 21,
-          "column": 10
+          "column": 8
+        }
+      },
+      "2": {
+        "start": {
+          "line": 22,
+          "column": 18
+        },
+        "end": {
+          "line": 22,
+          "column": 49
+        }
+      },
+      "3": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 24,
+          "column": 53
+        }
+      },
+      "4": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 24,
+          "column": 53
+        }
+      },
+      "5": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 25,
+          "column": 33
         }
       }
     },
@@ -13227,34 +12722,75 @@
           }
         ],
         "line": 8
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 0
+          },
+          "end": {
+            "line": 24,
+            "column": 53
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 23,
+              "column": 0
+            },
+            "end": {
+              "line": 24,
+              "column": 53
+            }
+          },
+          {
+            "start": {},
+            "end": {}
+          }
+        ],
+        "line": 23
       }
     },
     "s": {
-      "0": 3,
-      "1": 3
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 0,
+      "5": 4
     },
     "f": {},
     "b": {
       "0": [
-        3,
+        4,
         0
+      ],
+      "1": [
+        0,
+        4
       ]
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAcM;AAbN,SAASA,mBAAmB;AAC5B,OAAOC,SAAS;AAChB,SAASC,qBAAqB;AAC9B,OAAOC,eAAe;AACtB,SAASC,gBAAgB;AACzB,OAAO;AAEP,MAAMC,QAAQF,UAAUG,OAAOC,sBAAsBD,OAAOC,sBAAsBC,MAAS;AAE3FR,YACES,SAASC,MACT,uBAAC,iBACC,iCAAC,YAAS,OACR,iCAAC,SAAD;AAAA;AAAA;AAAA;AAAA,OAAI,KADN;AAAA;AAAA;AAAA;AAAA,OAEA,KAHF;AAAA;AAAA;AAAA;AAAA,OAIA,CAAgB",
+      "mappings": "AAYM;AAXN,SAASA,mBAAmB;AAC5B,SAASC,qBAAqB;AAC9B,OAAOC,eAAe;AACtB,SAASC,gBAAgB;AACzB,OAAO;AACP,OAAOC,eAAe;AAEtB,MAAMC,QAAQH,UAAUI,OAAOC,sBAAsBD,OAAOC,sBAAsBC,MAAS;AAC3F,MAAMC,WACJ,uBAAC,iBACC,iCAAC,YAAS,OACR,iCAAC,eAAD;AAAA;AAAA;AAAA;AAAA,OAAU,KADZ;AAAA;AAAA;AAAA;AAAA,OAEA,KAHF;AAAA;AAAA;AAAA;AAAA,OAIA;AAGF,MAAMC,YAAYC,SAASC,eAAe,MAAM;AAChD,IAAI,CAACF;AAAW,QAAM,IAAIG,MAAM,iCAAiC;AACjEb,YAAYU,WAAWD,QAAQ",
       "names": [
         "hydrateRoot",
-        "App",
         "BrowserRouter",
         "initStore",
         "Provider",
+        "AppRouter",
         "store",
         "window",
         "__PRELOADED_STATE__",
         "undefined",
+        "rootElem",
+        "container",
         "document",
-        "body"
+        "getElementById",
+        "Error"
       ],
       "sources": [
         "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/client.tsx"
@@ -13262,7 +12798,7 @@
       "file": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/client.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "81afa4379fcd414cbccd51999202846516ef226c"
+    "hash": "239518850aa862e4d795692cff3d2a9d1c3f6f3d"
   },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/server.ts": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/server.ts",
@@ -13320,6 +12856,15 @@
   },
   "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/server/entry-server.tsx": {
     "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/server/entry-server.tsx",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/app/App.tsx": {
+    "path": "C:/Users/m0rlo/RS_school/React/RSSchoolReact2023Q1/src/components/app/App.tsx",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
