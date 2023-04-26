@@ -17,6 +17,7 @@ function App() {
           }}
         ></script>
         <meta charSet="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>RSSchool React 2023 Q1</title>
       </head>
