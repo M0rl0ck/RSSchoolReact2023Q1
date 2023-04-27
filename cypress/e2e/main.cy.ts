@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-// import "../support/component";
 
 describe("Main page", () => {
   it("open Maine page", () => {
