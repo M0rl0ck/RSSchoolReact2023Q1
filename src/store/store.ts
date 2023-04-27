@@ -19,7 +19,6 @@ const initStore = (preloadState: RootState | undefined = undefined) => {
 
 type RootState = ReturnType<typeof rootReducer>;
 type AppStore = ReturnType<typeof initStore>;
-// type AppDispatch = typeof store.dispatch;
 
 export { RootState, AppStore };
 export default initStore;
