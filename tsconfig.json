@@ -16,10 +16,14 @@
     "resolveJsonModule": true,
     "outDir": "dist"
   },
+  "ts-node": {
+    "esm": true,
+  },
   "include": [
     "vite.config.ts",
     ".eslintrc.cjs",
     "./src/**/*",
-    "styled.d.ts"
+    "styled.d.ts",
+    "./component.d.ts",
   ]
 }
