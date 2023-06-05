@@ -20,7 +20,6 @@ function App() {
 
     footer: `</div>
       </body>
-    </html>
     </html>`,
   };
 }
