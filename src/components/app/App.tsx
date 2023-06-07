@@ -1,26 +1,27 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Layout from '../Layout';
-import AboutPage from '../../pages/about/AboutPage';
-import MainPage from '../../pages/main/MainPage';
-import Page404 from '../../pages/page404/Page404';
-import './app.css';
-import FormPage from '../../pages/form/FormPage';
-import { PATH } from '../../infostructure/constants';
-
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path={PATH.MAIN} element={<Layout />}>
-          <Route index element={<MainPage />} />
-          <Route path={PATH.ABOUT} element={<AboutPage />} />
-          <Route path={PATH.FORMS} element={<FormPage />} />
-          <Route path={PATH.DEFAULT} element={<Page404 />} />
-        </Route>
-      </Routes>
-    </div>
-  );
+  return {
+    header: `<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <script type="module">
+            import RefreshRuntime from "http://localhost:5173/@react-refresh";
+            RefreshRuntime.injectIntoGlobalHook(window);
+            window.$RefreshReg$ = () => {};
+            window.$RefreshSig$ = () => (type) => type;
+            window.__vite_plugin_react_preamble_installed__ = true;
+        </script>
+        <meta charSet="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RSSchool React 2023 Q1</title>
+      </head>
+      <body>
+        <div id="root">`,
+
+    footer: `</div>
+      </body>
+    </html>`,
+  };
 }
 
 export default App;
