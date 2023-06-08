@@ -26,4 +26,6 @@
 `$ npm run build`
 
 ## APP
+![app1](https://github.com/M0rl0ck/RSSchoolReact2023Q1/assets/95146343/1f2b4b06-5cd1-4fee-a9b3-8335dac0db99)
+
 ![app](https://github.com/M0rl0ck/RSSchoolReact2023Q1/assets/95146343/eadb58ad-66e2-4674-9008-59834f7a7e84)
